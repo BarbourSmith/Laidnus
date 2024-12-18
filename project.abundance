@@ -874,7 +874,7 @@
                             "ioValues": [
                                 {
                                     "name": "size",
-                                    "ioValue": 7
+                                    "ioValue": 10
                                 }
                             ],
                             "description": "Defines a Replicad code block.",
