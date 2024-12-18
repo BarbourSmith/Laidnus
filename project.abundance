@@ -355,8 +355,8 @@
                         {
                             "atomType": "Join",
                             "name": "Fusion",
-                            "x": 0.4656084656084656,
-                            "y": 0.25069637883008355,
+                            "x": 0.46825396825396826,
+                            "y": 0.26740947075208915,
                             "uniqueID": 1731525377933,
                             "ioValues": [
                                 {
@@ -370,10 +370,15 @@
                                 {
                                     "name": "Shape 3",
                                     "ioValue": 1731532678792
+                                },
+                                {
+                                    "name": "Shape 4",
+                                    "ioValue": 1734543741808
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                            "unionType": "Assembly"
+                            "unionType": "Fusion",
+                            "unionIndex": 1
                         },
                         {
                             "atomType": "Circle",
@@ -873,12 +878,12 @@
                             "ioValues": [
                                 {
                                     "name": "size",
-                                    "ioValue": 5
+                                    "ioValue": 7
                                 }
                             ],
                             "description": "Defines a Replicad code block.",
                             "codeVersion": 1,
-                            "code": "//Inputs:[size];\n\nlet shape = replicad.makeSphere(size)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return { geometry: [shape], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                            "code": "//Inputs:[size];\n\nlet shape = replicad.makeSphere(size)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return { geometry: [shape], \n      tags: [],\n      color: '#A3CE5B',\n      bom: [],\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
                         },
                         {
                             "atomType": "Move",
@@ -893,7 +898,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 80
+                                    "ioValue": 75
                                 },
                                 {
                                     "name": "yDist",
@@ -1012,6 +1017,13 @@
                             "ap2Primary": true,
                             "ap1ID": 1734543515678,
                             "ap2ID": 1734543741808
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 4",
+                            "ap2Primary": false,
+                            "ap1ID": 1734543741808,
+                            "ap2ID": 1731525377933
                         }
                     ],
                     "fileTypeVersion": 1,
