@@ -1606,7 +1606,7 @@
                                     "ioValues": [
                                         {
                                             "name": "number or geometry",
-                                            "ioValue": 1734811909777
+                                            "ioValue": 1734812289938
                                         }
                                     ],
                                     "description": "Connect geometry here to make it available in the next level up. "
@@ -1794,8 +1794,8 @@
                                 {
                                     "atomType": "Loft",
                                     "name": "Loft",
-                                    "x": 0.7195767195767196,
-                                    "y": 0.42061281337047357,
+                                    "x": 0.7215608465608465,
+                                    "y": 0.42896935933147634,
                                     "uniqueID": 1734811909777,
                                     "ioValues": [
                                         {
@@ -1899,8 +1899,8 @@
                                 {
                                     "atomType": "Join",
                                     "name": "Fusion",
-                                    "x": 0.8935185185185185,
-                                    "y": 0.7883008356545962,
+                                    "x": 0.8637566137566137,
+                                    "y": 0.45403899721448465,
                                     "uniqueID": 1734812289938,
                                     "ioValues": [
                                         {
@@ -1910,6 +1910,10 @@
                                         {
                                             "name": "Shape 2",
                                             "ioValue": 1734812323153
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": 1734812443615
                                         }
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -2002,6 +2006,71 @@
                                         }
                                     ],
                                     "description": "Moves a shape laterally in X, Y, Z."
+                                },
+                                {
+                                    "atomType": "Loft",
+                                    "name": "Loft",
+                                    "x": 0.8128306878306878,
+                                    "y": 0.8579387186629527,
+                                    "uniqueID": 1734812443615,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1734811817070
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1734812430584
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": ""
+                                        },
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1734811817070
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1734812430584
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": ""
+                                        }
+                                    ],
+                                    "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+                                    "closedSelection": 0
+                                },
+                                {
+                                    "atomType": "Export",
+                                    "name": "Export",
+                                    "x": 0.9212962962962963,
+                                    "y": 0.7548746518105849,
+                                    "uniqueID": 1734812514575,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1734812289938
+                                        },
+                                        {
+                                            "name": "Resolution (dpi)",
+                                            "ioValue": 72
+                                        },
+                                        {
+                                            "name": "Part Name",
+                                            "ioValue": "Side"
+                                        },
+                                        {
+                                            "name": "File Type",
+                                            "ioValue": "STL"
+                                        }
+                                    ],
+                                    "description": "Export Atom, let's you choose a type of file to Export.",
+                                    "type": null,
+                                    "resolution": 72,
+                                    "importIndex": 0,
+                                    "fileName": null
                                 }
                             ],
                             "allConnectors": [
@@ -2049,6 +2118,13 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
+                                    "ap2Name": "Shape 1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734811817070,
+                                    "ap2ID": 1734812443615
+                                },
+                                {
+                                    "ap1Name": "geometry",
                                     "ap2Name": "geometry",
                                     "ap2Primary": true,
                                     "ap1ID": 1734811817283,
@@ -2084,13 +2160,6 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
-                                    "ap2Name": "number or geometry",
-                                    "ap2Primary": false,
-                                    "ap1ID": 1734811909777,
-                                    "ap2ID": 1734811810877
-                                },
-                                {
-                                    "ap1Name": "geometry",
                                     "ap2Name": "Shape 1",
                                     "ap2Primary": false,
                                     "ap1ID": 1734811909777,
@@ -2112,6 +2181,20 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734812289938,
+                                    "ap2ID": 1734811810877
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734812289938,
+                                    "ap2ID": 1734812514575
+                                },
+                                {
+                                    "ap1Name": "geometry",
                                     "ap2Name": "Shape 2",
                                     "ap2Primary": false,
                                     "ap1ID": 1734812308620,
@@ -2122,6 +2205,20 @@
                                     "ap2Name": "Shape 2",
                                     "ap2Primary": false,
                                     "ap1ID": 1734812323153,
+                                    "ap2ID": 1734812289938
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734812430584,
+                                    "ap2ID": 1734812443615
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 3",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734812443615,
                                     "ap2ID": 1734812289938
                                 }
                             ],
