@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1731524860777,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1731525157088
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -227,12 +222,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731525187537,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1731526338360
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -251,12 +241,7 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1731525221737,
-                            "ioValues": [
-                                {
-                                    "name": "number or geometry",
-                                    "ioValue": 1734544418883
-                                }
-                            ],
+                            "ioValues": [],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -1488,7 +1473,7 @@
                                         }
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                                    "unionType": "Fusion",
+                                    "unionType": "Assembly",
                                     "unionIndex": 1
                                 },
                                 {
@@ -1855,8 +1840,8 @@
                                 {
                                     "atomType": "Rectangle",
                                     "name": "Rectangle",
-                                    "x": 0.16534391534391535,
-                                    "y": 0.8662952646239555,
+                                    "x": 0.07473544973544974,
+                                    "y": 0.8523676880222841,
                                     "uniqueID": 1734812087516,
                                     "ioValues": [
                                         {
@@ -1873,8 +1858,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.26785714285714285,
-                                    "y": 0.8857938718662952,
+                                    "x": 0.16137566137566137,
+                                    "y": 0.8885793871866295,
                                     "uniqueID": 1734812236213,
                                     "ioValues": [
                                         {
@@ -2010,8 +1995,8 @@
                                 {
                                     "atomType": "Loft",
                                     "name": "Loft",
-                                    "x": 0.8128306878306878,
-                                    "y": 0.8579387186629527,
+                                    "x": 0.8082010582010583,
+                                    "y": 0.871866295264624,
                                     "uniqueID": 1734812443615,
                                     "ioValues": [
                                         {
@@ -2071,6 +2056,91 @@
                                     "resolution": 72,
                                     "importIndex": 0,
                                     "fileName": null
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.23412698412698413,
+                                    "y": 0.9303621169916434,
+                                    "uniqueID": 1737484955378,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 8
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Rotate",
+                                    "name": "Rotate",
+                                    "x": 0.35449735449735453,
+                                    "y": 0.8635097493036212,
+                                    "uniqueID": 1737484998483,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737484955378
+                                        },
+                                        {
+                                            "name": "x-axis degrees",
+                                            "ioValue": 90
+                                        },
+                                        {
+                                            "name": "y-axis degrees",
+                                            "ioValue": 0
+                                        },
+                                        {
+                                            "name": "z-axis degrees",
+                                            "ioValue": 0
+                                        }
+                                    ],
+                                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                                },
+                                {
+                                    "atomType": "Move",
+                                    "name": "Move",
+                                    "x": 0.46164021164021163,
+                                    "y": 0.8105849582172702,
+                                    "uniqueID": 1737485017647,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737484998483
+                                        },
+                                        {
+                                            "name": "xDist",
+                                            "ioValue": 0
+                                        },
+                                        {
+                                            "name": "yDist",
+                                            "ioValue": 0
+                                        },
+                                        {
+                                            "name": "zDist",
+                                            "ioValue": 8
+                                        }
+                                    ],
+                                    "description": "Moves a shape laterally in X, Y, Z."
+                                },
+                                {
+                                    "atomType": "Loft",
+                                    "name": "Loft",
+                                    "x": 0.7043650793650793,
+                                    "y": 0.23119777158774377,
+                                    "uniqueID": 1737485030706,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": ""
+                                        },
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": ""
+                                        }
+                                    ],
+                                    "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+                                    "closedSelection": 0
                                 }
                             ],
                             "allConnectors": [
@@ -2220,7 +2290,22 @@
                                     "ap2Primary": false,
                                     "ap1ID": 1734812443615,
                                     "ap2ID": 1734812289938
-                                }
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737484955378,
+                                    "ap2ID": 1737484998483
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737484998483,
+                                    "ap2ID": 1737485017647
+                                },
+                                null
                             ],
                             "fileTypeVersion": 1,
                             "compiledBom": []
@@ -2826,12 +2911,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731528684030,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1731528781449
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
