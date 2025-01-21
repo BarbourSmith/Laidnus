@@ -1409,7 +1409,7 @@
                                     "ioValues": [
                                         {
                                             "name": "diameter",
-                                            "ioValue": 5
+                                            "ioValue": 5.8
                                         }
                                     ],
                                     "description": "Creates a new circle."
@@ -1449,8 +1449,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.4312169312169312,
-                                    "y": 0.7186629526462396,
+                                    "x": 0.5211640211640212,
+                                    "y": 0.5125348189415042,
                                     "uniqueID": 1734808997705,
                                     "ioValues": [
                                         {
@@ -1459,7 +1459,7 @@
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 12.5
+                                            "ioValue": 7.4
                                         }
                                     ],
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -1467,8 +1467,8 @@
                                 {
                                     "atomType": "Join",
                                     "name": "Fusion",
-                                    "x": 0.625,
-                                    "y": 0.6880222841225626,
+                                    "x": 0.6957671957671957,
+                                    "y": 0.467966573816156,
                                     "uniqueID": 1734809045220,
                                     "ioValues": [
                                         {
@@ -1478,10 +1478,14 @@
                                         {
                                             "name": "Shape 2",
                                             "ioValue": 1734808955112
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": 1737491425251
                                         }
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                                    "unionType": "Assembly",
+                                    "unionType": "Fusion",
                                     "unionIndex": 1
                                 },
                                 {
@@ -1496,18 +1500,65 @@
                                 },
                                 {
                                     "atomType": "Equation",
-                                    "name": "L-2.5",
-                                    "x": 0.12367724867724868,
-                                    "y": 0.7103064066852367,
+                                    "name": "L-2.6",
+                                    "x": 0.1898148148148148,
+                                    "y": 0.6657381615598886,
                                     "uniqueID": 1734811529910,
                                     "ioValues": [
                                         {
                                             "name": "L",
-                                            "ioValue": 15
+                                            "ioValue": 10
                                         }
                                     ],
                                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                                    "currentEquation": "L-2.5"
+                                    "currentEquation": "L-2.6"
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.4312169312169312,
+                                    "y": 0.6740947075208913,
+                                    "uniqueID": 1737491379981,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 8
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.5224867724867724,
+                                    "y": 0.8105849582172702,
+                                    "uniqueID": 1737491425251,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737491379981
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 7.5
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Equation",
+                                    "name": "H+.1",
+                                    "x": 0.3101851851851852,
+                                    "y": 0.8857938718662952,
+                                    "uniqueID": 1737491509826,
+                                    "ioValues": [
+                                        {
+                                            "name": "H",
+                                            "ioValue": 7.4
+                                        }
+                                    ],
+                                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                                    "currentEquation": "H+.1"
                                 }
                             ],
                             "allConnectors": [
@@ -1548,17 +1599,17 @@
                                 },
                                 {
                                     "ap1Name": "number or geometry",
-                                    "ap2Name": "L",
-                                    "ap2Primary": false,
-                                    "ap1ID": 1734811513182,
-                                    "ap2ID": 1734811529910
-                                },
-                                {
-                                    "ap1Name": "number or geometry",
                                     "ap2Name": "height",
                                     "ap2Primary": false,
                                     "ap1ID": 1734811513182,
                                     "ap2ID": 1734808955112
+                                },
+                                {
+                                    "ap1Name": "number or geometry",
+                                    "ap2Name": "L",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734811513182,
+                                    "ap2ID": 1734811529910
                                 },
                                 {
                                     "ap1Name": "result",
@@ -1566,6 +1617,34 @@
                                     "ap2Primary": false,
                                     "ap1ID": 1734811529910,
                                     "ap2ID": 1734808997705
+                                },
+                                {
+                                    "ap1Name": "result",
+                                    "ap2Name": "H",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1734811529910,
+                                    "ap2ID": 1737491509826
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737491379981,
+                                    "ap2ID": 1737491425251
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 3",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737491425251,
+                                    "ap2ID": 1734809045220
+                                },
+                                {
+                                    "ap1Name": "result",
+                                    "ap2Name": "height",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737491509826,
+                                    "ap2ID": 1737491425251
                                 }
                             ],
                             "fileTypeVersion": 1,
