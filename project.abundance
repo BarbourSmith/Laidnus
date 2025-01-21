@@ -25,8 +25,8 @@
         {
             "atomType": "Molecule",
             "name": "Base",
-            "x": 0.2552910052910053,
-            "y": 0.7604456824512534,
+            "x": 0.2605820105820106,
+            "y": 0.7493036211699164,
             "uniqueID": 1731524866642,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3835,8 +3835,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.3345323741007194,
-            "y": 0.34261838440111425,
+            "x": 0.3353174603174603,
+            "y": 0.3147632311977716,
             "uniqueID": 1731526427984,
             "ioValues": [
                 {
@@ -3853,7 +3853,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 20
+                    "ioValue": 22
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
