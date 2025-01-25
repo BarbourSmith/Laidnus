@@ -63,8 +63,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.12037037037037036,
-                    "y": 0.766016713091922,
+                    "x": 0.12235449735449735,
+                    "y": 0.7799442896935932,
                     "uniqueID": 1731525007182,
                     "ioValues": [
                         {
@@ -77,8 +77,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2923280423280423,
-                    "y": 0.6713091922005571,
+                    "x": 0.2996031746031746,
+                    "y": 0.67966573816156,
                     "uniqueID": 1731525016299,
                     "ioValues": [
                         {
@@ -103,8 +103,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.42791005291005285,
-                    "y": 0.6100278551532033,
+                    "x": 0.42857142857142855,
+                    "y": 0.6211699164345404,
                     "uniqueID": 1731525041198,
                     "ioValues": [
                         {
@@ -149,6 +149,259 @@
                     ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 19
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Lower",
+                    "x": 0.38425925925925924,
+                    "y": 0.2785515320334262,
+                    "uniqueID": 1737773933408,
+                    "ioValues": [],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1737773933407,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Upper",
+                    "x": 0.4993386243386243,
+                    "y": 0.7214484679665739,
+                    "uniqueID": 1737773944838,
+                    "ioValues": [],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1737773944628,
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1737774095046
+                                }
+                            ],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Molecule",
+                            "name": "Outline",
+                            "x": 0.2222222222222222,
+                            "y": 0.30919220055710306,
+                            "uniqueID": 1737773966461,
+                            "ioValues": [],
+                            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                            "topLevel": false,
+                            "allAtoms": [
+                                {
+                                    "atomType": "Output",
+                                    "name": "Output",
+                                    "x": 0.98,
+                                    "y": 0.5,
+                                    "uniqueID": 1737773966356,
+                                    "ioValues": [
+                                        {
+                                            "name": "number or geometry",
+                                            "ioValue": 1737774079790
+                                        }
+                                    ],
+                                    "description": "Connect geometry here to make it available in the next level up. "
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.1865079365079365,
+                                    "y": 0.4568245125348189,
+                                    "uniqueID": 1737773974220,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 100
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.35383597883597884,
+                                    "y": 0.36211699164345407,
+                                    "uniqueID": 1737773986837,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737773974220
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 22
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.20965608465608468,
+                                    "y": 0.807799442896936,
+                                    "uniqueID": 1737774037891,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 96
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.36177248677248675,
+                                    "y": 0.6657381615598886,
+                                    "uniqueID": 1737774048100,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737774037891
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 20
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Difference",
+                                    "name": "Difference",
+                                    "x": 0.45701058201058203,
+                                    "y": 0.49860724233983283,
+                                    "uniqueID": 1737774057611,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry2",
+                                            "ioValue": 1737774048100
+                                        },
+                                        {
+                                            "name": "geometry1",
+                                            "ioValue": 1737773986837
+                                        }
+                                    ],
+                                    "description": "Subtracts shape two from shape one."
+                                },
+                                {
+                                    "atomType": "Color",
+                                    "name": "Color",
+                                    "x": 0.5978835978835979,
+                                    "y": 0.5905292479108635,
+                                    "uniqueID": 1737774079790,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1737774057611
+                                        }
+                                    ],
+                                    "description": "Changes the color of the shape.",
+                                    "selectedColorIndex": 19
+                                }
+                            ],
+                            "allConnectors": [
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737773974220,
+                                    "ap2ID": 1737773986837
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737773986837,
+                                    "ap2ID": 1737774057611
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737774037891,
+                                    "ap2ID": 1737774048100
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737774048100,
+                                    "ap2ID": 1737774057611
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1737774057611,
+                                    "ap2ID": 1737774079790
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737774079790,
+                                    "ap2ID": 1737773966356
+                                }
+                            ],
+                            "fileTypeVersion": 1,
+                            "compiledBom": []
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Assembly",
+                            "x": 0.5482804232804233,
+                            "y": 0.415041782729805,
+                            "uniqueID": 1737774095046,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1737773966461
+                                }
+                            ],
+                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                            "unionType": "Assembly",
+                            "unionIndex": 0
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "Geometry",
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1737773966461,
+                            "ap2ID": 1737774095046
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1737774095046,
+                            "ap2ID": 1737773944628
+                        }
+                    ],
+                    "fileTypeVersion": 1,
+                    "compiledBom": []
                 }
             ],
             "allConnectors": [
@@ -238,8 +491,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Indicator",
-                    "x": 0.2208994708994709,
-                    "y": 0.4596100278551532,
+                    "x": 0.2189153439153439,
+                    "y": 0.4428969359331476,
                     "uniqueID": 1731525221716,
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -925,7 +1178,7 @@
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                            "unionType": "Fusion",
+                            "unionType": "Assembly",
                             "unionIndex": 1
                         },
                         {
@@ -4231,8 +4484,8 @@
         {
             "atomType": "Molecule",
             "name": "Pedistal",
-            "x": 0.5833333333333334,
-            "y": 0.7632311977715878,
+            "x": 0.5826719576719577,
+            "y": 0.7409470752089137,
             "uniqueID": 1731528683849,
             "ioValues": [
                 {
