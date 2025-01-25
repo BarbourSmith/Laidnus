@@ -2,7 +2,8 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|Slip Ring|1|$0.00|https://amzn.to/4azfF23|
 |name|1|$0.00|[Amazon](https://www.amazon.com/gp/product/B082PPH3Z2?tag=maslowcnc01-20)|
-|Total: |1|$0.00| |
+|Total: |2|$0.00| |
 
  3xCOG MSRP: $0.00
