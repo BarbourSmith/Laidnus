@@ -135,8 +135,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.35383597883597884,
-                                    "y": 0.36211699164345407,
+                                    "x": 0.3551136363636364,
+                                    "y": 0.36768802228412256,
                                     "uniqueID": 1737773986837,
                                     "ioValues": [
                                         {
@@ -217,7 +217,7 @@
                                 },
                                 {
                                     "atomType": "Tag",
-                                    "name": "Plastic",
+                                    "name": "Wood",
                                     "x": 0.7275132275132276,
                                     "y": 0.6740947075208913,
                                     "uniqueID": 1737774994006,
@@ -229,7 +229,7 @@
                                     ],
                                     "description": "Tags geometry so that it can be extracted later.",
                                     "tags": [
-                                        "Plastic"
+                                        "Wood"
                                     ],
                                     "cutTag": false
                                 }
@@ -289,7 +289,7 @@
                             "compiledBom": []
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Assembly",
                             "x": 0.5482804232804233,
                             "y": 0.415041782729805,
@@ -463,7 +463,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Fusion",
                                             "x": 0.8009259259259259,
                                             "y": 0.3008356545961003,
@@ -622,7 +622,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Fusion",
                                             "x": 0.29563492063492064,
                                             "y": 0.8105849582172702,
@@ -770,7 +770,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Assembly",
                                             "x": 0.5456349206349206,
                                             "y": 0.5515320334261838,
@@ -1122,7 +1122,7 @@
                                     "description": "Moves a shape laterally in X, Y, Z."
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Assembly",
                                     "x": 0.8174603174603176,
                                     "y": 0.38440111420612816,
@@ -1323,7 +1323,7 @@
                                             "description": "Subtracts shape two from shape one."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Fusion",
                                             "x": 0.375,
                                             "y": 0.27019498607242337,
@@ -1847,7 +1847,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Fusion",
                                             "x": 0.8009259259259259,
                                             "y": 0.3008356545961003,
@@ -2006,7 +2006,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Fusion",
                                             "x": 0.29563492063492064,
                                             "y": 0.8105849582172702,
@@ -2154,7 +2154,7 @@
                                             "description": "Moves a shape laterally in X, Y, Z."
                                         },
                                         {
-                                            "atomType": "Join",
+                                            "atomType": "Assembly",
                                             "name": "Assembly",
                                             "x": 0.5456349206349206,
                                             "y": 0.5515320334261838,
@@ -2549,7 +2549,7 @@
                     ]
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.6924603174603174,
                     "y": 0.67966573816156,
@@ -2598,7 +2598,7 @@
             ]
         },
         {
-            "atomType": "Join",
+            "atomType": "Assembly",
             "name": "Assembly",
             "x": 0.5443121693121693,
             "y": 0.45403899721448465,
@@ -2760,7 +2760,7 @@
                             "description": "Extrudes a 2D shape. Input can be negitive. "
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Assembly",
                             "x": 0.4695767195767196,
                             "y": 0.30919220055710306,
@@ -2916,7 +2916,7 @@
                                     "description": "Moves a shape laterally in X, Y, Z."
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.6865079365079365,
                                     "y": 0.25069637883008355,
@@ -3253,7 +3253,7 @@
                             "description": "Moves a shape laterally in X, Y, Z."
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Assembly",
                             "x": 0.6812169312169312,
                             "y": 0.5793871866295265,
@@ -3315,7 +3315,7 @@
                             "description": "Moves a shape laterally in X, Y, Z."
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Fusion",
                             "x": 0.873015873015873,
                             "y": 0.6573816155988859,
@@ -3683,7 +3683,7 @@
                             "description": "Moves a shape laterally in X, Y, Z."
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Fusion",
                             "x": 0.5621693121693122,
                             "y": 0.3565459610027855,
@@ -3882,7 +3882,7 @@
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.6957671957671957,
                                     "y": 0.467966573816156,
@@ -4450,7 +4450,7 @@
                                     "description": "Moves a shape laterally in X, Y, Z."
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.8637566137566137,
                                     "y": 0.45403899721448465,
@@ -4727,7 +4727,7 @@
                                     "closedSelection": 0
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.7394179894179894,
                                     "y": 0.20612813370473537,
@@ -5290,7 +5290,7 @@
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.873015873015873,
                                     "y": 0.4902506963788301,
@@ -5354,7 +5354,7 @@
                             "compiledBom": []
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Fusion",
                             "x": 0.7658730158730159,
                             "y": 0.1949860724233983,
@@ -5482,7 +5482,7 @@
                                     "description": "Moves a shape laterally in X, Y, Z."
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Assembly",
                                     "x": 0.5787037037037037,
                                     "y": 0.5153203342618384,
@@ -5601,7 +5601,7 @@
                                     "selectedColorIndex": 21
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Assembly",
                                     "x": 0.41269841269841273,
                                     "y": 0.5236768802228412,
@@ -5711,7 +5711,7 @@
                             "compiledBom": []
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Assembly",
                             "x": 0.7222222222222222,
                             "y": 0.637883008356546,
@@ -5823,7 +5823,7 @@
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
                                 },
                                 {
-                                    "atomType": "Join",
+                                    "atomType": "Assembly",
                                     "name": "Fusion",
                                     "x": 0.5595238095238095,
                                     "y": 0.47632311977715874,
@@ -6184,7 +6184,7 @@
                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.4695767195767196,
                     "y": 0.7688022284122563,
@@ -6204,7 +6204,7 @@
                     "unionIndex": 0
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.533273381294964,
                     "y": 0.45403899721448465,
@@ -6500,7 +6500,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.789568345323741,
                     "y": 0.7520891364902507,
@@ -6751,7 +6751,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.6105675146771037,
                     "y": 0.6155988857938719,
