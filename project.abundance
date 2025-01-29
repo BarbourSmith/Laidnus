@@ -3344,8 +3344,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.5443121693121693,
-            "y": 0.45403899721448465,
+            "x": 0.5482804232804233,
+            "y": 0.4345403899721449,
             "uniqueID": 1731525157088,
             "ioValues": [
                 {
@@ -6120,8 +6120,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Mounting Bolts",
-                            "x": 0.6144179894179894,
-                            "y": 0.6601671309192201,
+                            "x": 0.6117724867724867,
+                            "y": 0.6629526462395543,
                             "uniqueID": 1737492085693,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -6373,7 +6373,7 @@
                                     "ioValues": [
                                         {
                                             "name": "diameter",
-                                            "ioValue": 10
+                                            "ioValue": 9
                                         }
                                     ],
                                     "description": "Creates a new circle."
@@ -6399,8 +6399,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.3253968253968254,
-                                    "y": 0.8551532033426184,
+                                    "x": 0.3273809523809524,
+                                    "y": 0.8523676880222841,
                                     "uniqueID": 1738122992222,
                                     "ioValues": [
                                         {
@@ -6417,7 +6417,7 @@
                                         },
                                         {
                                             "name": "zDist",
-                                            "ioValue": -18
+                                            "ioValue": -24
                                         }
                                     ],
                                     "description": "Moves a shape laterally in X, Y, Z."
@@ -7698,7 +7698,8 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tagIndex": 0
+            "tag": "Wood",
+            "tagIndex": 1
         },
         {
             "atomType": "Export",
