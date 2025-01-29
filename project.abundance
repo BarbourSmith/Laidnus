@@ -1880,7 +1880,7 @@
                                     "ioValues": [
                                         {
                                             "name": "number or geometry",
-                                            "ioValue": 1737774228084
+                                            "ioValue": 1738122859730
                                         }
                                     ],
                                     "description": "Connect geometry here to make it available in the next level up. "
@@ -1888,8 +1888,8 @@
                                 {
                                     "atomType": "GitHubMolecule",
                                     "name": "Compact-Slip-Ring",
-                                    "x": 0.2837301587301587,
-                                    "y": 0.5682451253481894,
+                                    "x": 0.5291005291005292,
+                                    "y": 0.3203342618384401,
                                     "uniqueID": 1737774228084,
                                     "ioValues": [],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2236,14 +2236,107 @@
                                             "source": "https://amzn.to/4azfF23"
                                         }
                                     ]
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.3664021164021164,
+                                    "y": 0.713091922005571,
+                                    "uniqueID": 1738122815734,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 7
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.4986772486772487,
+                                    "y": 0.7353760445682451,
+                                    "uniqueID": 1738122832163,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738122815734
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 17
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Color",
+                                    "name": "Color",
+                                    "x": 0.6600529100529101,
+                                    "y": 0.818941504178273,
+                                    "uniqueID": 1738122850245,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738122832163
+                                        }
+                                    ],
+                                    "description": "Changes the color of the shape.",
+                                    "selectedColorIndex": 21
+                                },
+                                {
+                                    "atomType": "Assembly",
+                                    "name": "Assembly",
+                                    "x": 0.7817460317460317,
+                                    "y": 0.7493036211699164,
+                                    "uniqueID": 1738122859730,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1738122850245
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1737774228084
+                                        }
+                                    ],
+                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
                                 }
                             ],
                             "allConnectors": [
                                 {
                                     "ap1Name": "Geometry",
-                                    "ap2Name": "number or geometry",
+                                    "ap2Name": "Shape 2",
                                     "ap2Primary": false,
                                     "ap1ID": 1737774228084,
+                                    "ap2ID": 1738122859730
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738122815734,
+                                    "ap2ID": 1738122832163
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738122832163,
+                                    "ap2ID": 1738122850245
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738122850245,
+                                    "ap2ID": 1738122859730
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738122859730,
                                     "ap2ID": 1737774192639
                                 }
                             ],
@@ -2278,7 +2371,7 @@
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": 1
+                                    "ioValue": -1
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -2338,8 +2431,8 @@
                         {
                             "atomType": "ExtractTag",
                             "name": "Extract Tag",
-                            "x": 0.7235449735449735,
-                            "y": 0.796657381615599,
+                            "x": 0.7248677248677249,
+                            "y": 0.8495821727019498,
                             "uniqueID": 1737775010323,
                             "ioValues": [
                                 {
@@ -4151,7 +4244,7 @@
                     "atomType": "Molecule",
                     "name": "Upright",
                     "x": 0.210978835978836,
-                    "y": 0.7799442896935932,
+                    "y": 0.7883008356545962,
                     "uniqueID": 1731525233182,
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -6027,8 +6120,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Mounting Bolts",
-                            "x": 0.6170634920634921,
-                            "y": 0.6713091922005571,
+                            "x": 0.6144179894179894,
+                            "y": 0.6601671309192201,
                             "uniqueID": 1737492085693,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -6065,8 +6158,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.2830687830687831,
-                                    "y": 0.38718662952646243,
+                                    "x": 0.42063492063492064,
+                                    "y": 0.298050139275766,
                                     "uniqueID": 1737492120406,
                                     "ioValues": [
                                         {
@@ -6083,8 +6176,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.5046296296296297,
-                                    "y": 0.3537604456824513,
+                                    "x": 0.6322751322751322,
+                                    "y": 0.20055710306406688,
                                     "uniqueID": 1737492135920,
                                     "ioValues": [
                                         {
@@ -6109,8 +6202,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.5092592592592593,
-                                    "y": 0.6935933147632313,
+                                    "x": 0.6421957671957672,
+                                    "y": 0.6852367688022285,
                                     "uniqueID": 1737492139542,
                                     "ioValues": [
                                         {
@@ -6135,8 +6228,8 @@
                                 {
                                     "atomType": "Assembly",
                                     "name": "Assembly",
-                                    "x": 0.5787037037037037,
-                                    "y": 0.5153203342618384,
+                                    "x": 0.7162698412698413,
+                                    "y": 0.4233983286908078,
                                     "uniqueID": 1737492161355,
                                     "ioValues": [
                                         {
@@ -6155,8 +6248,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.7294973544973544,
-                                    "y": 0.5125348189415042,
+                                    "x": 0.8207671957671958,
+                                    "y": 0.3983286908077995,
                                     "uniqueID": 1737492200084,
                                     "ioValues": [
                                         {
@@ -6213,8 +6306,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.289021164021164,
-                                    "y": 0.7158774373259054,
+                                    "x": 0.39021164021164023,
+                                    "y": 0.6545961002785515,
                                     "uniqueID": 1737492427633,
                                     "ioValues": [
                                         {
@@ -6239,8 +6332,8 @@
                                 {
                                     "atomType": "Color",
                                     "name": "Color",
-                                    "x": 0.36706349206349204,
-                                    "y": 0.8050139275766017,
+                                    "x": 0.5013227513227514,
+                                    "y": 0.6991643454038997,
                                     "uniqueID": 1737492443267,
                                     "ioValues": [
                                         {
@@ -6254,8 +6347,8 @@
                                 {
                                     "atomType": "Assembly",
                                     "name": "Assembly",
-                                    "x": 0.41269841269841273,
-                                    "y": 0.5236768802228412,
+                                    "x": 0.5555555555555556,
+                                    "y": 0.4735376044568245,
                                     "uniqueID": 1737492452284,
                                     "ioValues": [
                                         {
