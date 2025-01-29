@@ -2565,8 +2565,8 @@
                         {
                             "atomType": "ExtractTag",
                             "name": "Extract Tag",
-                            "x": 0.7242063492063492,
-                            "y": 0.8523676880222841,
+                            "x": 0.7281746031746031,
+                            "y": 0.8272980501392758,
                             "uniqueID": 1737775010323,
                             "ioValues": [
                                 {
@@ -4572,8 +4572,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.39285714285714285,
-                                    "y": 0.883008356545961,
+                                    "x": 0.39616402116402116,
+                                    "y": 0.9108635097493036,
                                     "uniqueID": 1738130349895,
                                     "ioValues": [
                                         {
@@ -4590,7 +4590,7 @@
                                         },
                                         {
                                             "name": "zDist",
-                                            "ioValue": -3
+                                            "ioValue": -2
                                         }
                                     ],
                                     "description": "Moves a shape laterally in X, Y, Z."
