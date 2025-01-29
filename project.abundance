@@ -6274,8 +6274,8 @@
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.08068783068783068,
-                                    "y": 0.6935933147632313,
+                                    "x": 0.11574074074074073,
+                                    "y": 0.5459610027855153,
                                     "uniqueID": 1737492399664,
                                     "ioValues": [
                                         {
@@ -6288,8 +6288,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.1746031746031746,
-                                    "y": 0.6629526462395543,
+                                    "x": 0.21230158730158732,
+                                    "y": 0.5933147632311978,
                                     "uniqueID": 1737492420979,
                                     "ioValues": [
                                         {
@@ -6338,7 +6338,7 @@
                                     "ioValues": [
                                         {
                                             "name": "geometry",
-                                            "ioValue": 1737492427633
+                                            "ioValue": 1738123003133
                                         }
                                     ],
                                     "description": "Changes the color of the shape.",
@@ -6363,6 +6363,83 @@
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                                     "unionType": "Assembly",
                                     "unionIndex": 0
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.10251322751322753,
+                                    "y": 0.8328690807799443,
+                                    "uniqueID": 1738122969185,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 10
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.23346560846560846,
+                                    "y": 0.8746518105849581,
+                                    "uniqueID": 1738122980049,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738122969185
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 20
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Move",
+                                    "name": "Move",
+                                    "x": 0.3253968253968254,
+                                    "y": 0.8551532033426184,
+                                    "uniqueID": 1738122992222,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738122980049
+                                        },
+                                        {
+                                            "name": "xDist",
+                                            "ioValue": 0
+                                        },
+                                        {
+                                            "name": "yDist",
+                                            "ioValue": 0
+                                        },
+                                        {
+                                            "name": "zDist",
+                                            "ioValue": -18
+                                        }
+                                    ],
+                                    "description": "Moves a shape laterally in X, Y, Z."
+                                },
+                                {
+                                    "atomType": "Fusion",
+                                    "name": "Fusion",
+                                    "x": 0.419973544973545,
+                                    "y": 0.8635097493036212,
+                                    "uniqueID": 1738123003133,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1738122992222
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1737492427633
+                                        }
+                                    ],
+                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                                    "unionType": "Fusion"
                                 }
                             ],
                             "allConnectors": [
@@ -6424,10 +6501,10 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
-                                    "ap2Name": "geometry",
-                                    "ap2Primary": true,
+                                    "ap2Name": "Shape 2",
+                                    "ap2Primary": false,
                                     "ap1ID": 1737492427633,
-                                    "ap2ID": 1737492443267
+                                    "ap2ID": 1738123003133
                                 },
                                 {
                                     "ap1Name": "geometry",
@@ -6449,6 +6526,34 @@
                                     "ap2Primary": true,
                                     "ap1ID": 1737492452284,
                                     "ap2ID": 1737492139542
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738122969185,
+                                    "ap2ID": 1738122980049
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738122980049,
+                                    "ap2ID": 1738122992222
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738122992222,
+                                    "ap2ID": 1738123003133
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738123003133,
+                                    "ap2ID": 1737492443267
                                 }
                             ],
                             "fileTypeVersion": 1,
