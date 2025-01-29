@@ -10254,7 +10254,8 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tagIndex": 0
+            "tag": "Wood",
+            "tagIndex": 1
         },
         {
             "atomType": "Export",
