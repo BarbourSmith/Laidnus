@@ -2565,8 +2565,8 @@
                         {
                             "atomType": "ExtractTag",
                             "name": "Extract Tag",
-                            "x": 0.7275132275132276,
-                            "y": 0.8245125348189415,
+                            "x": 0.7235449735449735,
+                            "y": 0.8523676880222841,
                             "uniqueID": 1737775010323,
                             "ioValues": [
                                 {
@@ -2597,7 +2597,7 @@
                                     "ioValues": [
                                         {
                                             "name": "number or geometry",
-                                            "ioValue": 1738123854835
+                                            "ioValue": 1738174821033
                                         }
                                     ],
                                     "description": "Connect geometry here to make it available in the next level up. "
@@ -3350,16 +3350,16 @@
                                     "uniqueID": 1738123854835,
                                     "ioValues": [
                                         {
-                                            "name": "Shape 5",
-                                            "ioValue": 1738130271841
-                                        },
-                                        {
                                             "name": "Shape 6",
                                             "ioValue": 1737775108592
                                         },
                                         {
                                             "name": "Shape 7",
                                             "ioValue": 1738123883532
+                                        },
+                                        {
+                                            "name": "Shape 8",
+                                            "ioValue": 1738130271841
                                         }
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -4631,6 +4631,29 @@
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                                     "unionType": "Fusion"
+                                },
+                                {
+                                    "atomType": "Fusion",
+                                    "name": "Fusion",
+                                    "x": 0.8240740740740741,
+                                    "y": 0.7075208913649026,
+                                    "uniqueID": 1738174821033,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1738130271841
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1738123883532
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": 1737775108592
+                                        }
+                                    ],
+                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                                    "unionType": "Fusion"
                                 }
                             ],
                             "allConnectors": [
@@ -4647,6 +4670,13 @@
                                     "ap2Primary": false,
                                     "ap1ID": 1737775108592,
                                     "ap2ID": 1738123854835
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 3",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1737775108592,
+                                    "ap2ID": 1738174821033
                                 },
                                 {
                                     "ap1Name": "geometry",
@@ -4671,17 +4701,17 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
-                                    "ap2Name": "number or geometry",
-                                    "ap2Primary": false,
-                                    "ap1ID": 1738123854835,
-                                    "ap2ID": 1737775059213
-                                },
-                                {
-                                    "ap1Name": "geometry",
                                     "ap2Name": "Shape 7",
                                     "ap2Primary": false,
                                     "ap1ID": 1738123883532,
                                     "ap2ID": 1738123854835
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738123883532,
+                                    "ap2ID": 1738174821033
                                 },
                                 {
                                     "ap1Name": "Geometry",
@@ -4706,10 +4736,17 @@
                                 },
                                 {
                                     "ap1Name": "geometry",
-                                    "ap2Name": "Shape 5",
+                                    "ap2Name": "Shape 8",
                                     "ap2Primary": false,
                                     "ap1ID": 1738130271841,
                                     "ap2ID": 1738123854835
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738130271841,
+                                    "ap2ID": 1738174821033
                                 },
                                 {
                                     "ap1Name": "Geometry",
@@ -4738,6 +4775,13 @@
                                     "ap2Primary": true,
                                     "ap1ID": 1738130420634,
                                     "ap2ID": 1738130271841
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738174821033,
+                                    "ap2ID": 1737775059213
                                 }
                             ],
                             "fileTypeVersion": 1,
@@ -4803,8 +4847,8 @@
                                 {
                                     "atomType": "GitHubMolecule",
                                     "name": "Rectangle-Rounded",
-                                    "x": 0.1832010582010582,
-                                    "y": 0.3537604456824513,
+                                    "x": 0.21031746031746032,
+                                    "y": 0.17270194986072424,
                                     "uniqueID": 1738124292853,
                                     "ioValues": [
                                         {
@@ -5363,8 +5407,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.30026455026455023,
-                                    "y": 0.3175487465181059,
+                                    "x": 0.3664021164021164,
+                                    "y": 0.17270194986072424,
                                     "uniqueID": 1738124315590,
                                     "ioValues": [
                                         {
@@ -5396,8 +5440,8 @@
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.19642857142857142,
-                                    "y": 0.6323119777158774,
+                                    "x": 0.18584656084656084,
+                                    "y": 0.36490250696378834,
                                     "uniqueID": 1738130682344,
                                     "ioValues": [
                                         {
@@ -5410,8 +5454,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.4470899470899471,
-                                    "y": 0.2841225626740947,
+                                    "x": 0.4973544973544974,
+                                    "y": 0.23676880222841226,
                                     "uniqueID": 1738130700201,
                                     "ioValues": [
                                         {
@@ -5455,8 +5499,8 @@
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.18584656084656084,
-                                    "y": 0.8384401114206128,
+                                    "x": 0.16865079365079363,
+                                    "y": 0.5710306406685237,
                                     "uniqueID": 1738130758221,
                                     "ioValues": [
                                         {
@@ -5469,8 +5513,8 @@
                                 {
                                     "atomType": "Difference",
                                     "name": "Difference",
-                                    "x": 0.3062169312169312,
-                                    "y": 0.6323119777158774,
+                                    "x": 0.30158730158730157,
+                                    "y": 0.36490250696378834,
                                     "uniqueID": 1738130773026,
                                     "ioValues": [
                                         {
@@ -5487,13 +5531,49 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.44841269841269843,
-                                    "y": 0.6685236768802229,
+                                    "x": 0.46891534391534395,
+                                    "y": 0.40668523676880225,
                                     "uniqueID": 1738130781983,
                                     "ioValues": [
                                         {
                                             "name": "geometry",
                                             "ioValue": 1738130773026
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 11
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Rectangle",
+                                    "name": "Rectangle",
+                                    "x": 0.22156084656084654,
+                                    "y": 0.8384401114206128,
+                                    "uniqueID": 1738175016969,
+                                    "ioValues": [
+                                        {
+                                            "name": "x length",
+                                            "ioValue": 10
+                                        },
+                                        {
+                                            "name": "y length",
+                                            "ioValue": 10
+                                        }
+                                    ],
+                                    "description": "Creates a new rectangle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.4034391534391535,
+                                    "y": 0.7270194986072424,
+                                    "uniqueID": 1738175024580,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": ""
                                         },
                                         {
                                             "name": "height",
@@ -8742,13 +8822,13 @@
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.10251322751322753,
+                                    "x": 0.10648148148148147,
                                     "y": 0.8328690807799443,
                                     "uniqueID": 1738122969185,
                                     "ioValues": [
                                         {
                                             "name": "diameter",
-                                            "ioValue": 9
+                                            "ioValue": 8
                                         }
                                     ],
                                     "description": "Creates a new circle."
@@ -8823,8 +8903,8 @@
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.1302910052910053,
-                                    "y": 0.3203342618384401,
+                                    "x": 0.13359788359788358,
+                                    "y": 0.3008356545961003,
                                     "uniqueID": 1738174626298,
                                     "ioValues": [
                                         {
@@ -10113,8 +10193,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.6474867724867724,
-            "y": 0.2562674094707521,
+            "x": 0.6488095238095237,
+            "y": 0.2646239554317549,
             "uniqueID": 1738111822881,
             "ioValues": [
                 {
