@@ -310,6 +310,10 @@
                                 {
                                     "name": "Shape 5",
                                     "ioValue": 1737775129120
+                                },
+                                {
+                                    "name": "Shape 6",
+                                    "ioValue": 1738124346601
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -3473,8 +3477,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Electronics",
-                            "x": 0.5740740740740741,
-                            "y": 0.8105849582172702,
+                            "x": 0.576058201058201,
+                            "y": 0.7994428969359332,
                             "uniqueID": 1738124189084,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3486,27 +3490,32 @@
                                     "x": 0.98,
                                     "y": 0.5,
                                     "uniqueID": 1738124188760,
-                                    "ioValues": [],
+                                    "ioValues": [
+                                        {
+                                            "name": "number or geometry",
+                                            "ioValue": 1738124337189
+                                        }
+                                    ],
                                     "description": "Connect geometry here to make it available in the next level up. "
                                 },
                                 {
                                     "atomType": "GitHubMolecule",
                                     "name": "Rectangle-Rounded",
-                                    "x": 0.30423280423280424,
-                                    "y": 0.5403899721448467,
-                                    "uniqueID": 1738124213407,
+                                    "x": 0.22486772486772486,
+                                    "y": 0.4317548746518106,
+                                    "uniqueID": 1738124292853,
                                     "ioValues": [
                                         {
                                             "name": "Width",
-                                            "ioValue": 10
+                                            "ioValue": 70
                                         },
                                         {
                                             "name": "Height",
-                                            "ioValue": 10
+                                            "ioValue": 39
                                         },
                                         {
                                             "name": "Radius",
-                                            "ioValue": 1
+                                            "ioValue": 4
                                         }
                                     ],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3517,8 +3526,13 @@
                                             "name": "Output",
                                             "x": 0.98,
                                             "y": 0.5,
-                                            "uniqueID": 1738124213836,
-                                            "ioValues": [],
+                                            "uniqueID": 1738124292925,
+                                            "ioValues": [
+                                                {
+                                                    "name": "number or geometry",
+                                                    "ioValue": 1738124292919
+                                                }
+                                            ],
                                             "description": "Connect geometry here to make it available in the next level up. "
                                         },
                                         {
@@ -3526,7 +3540,7 @@
                                             "name": "Width",
                                             "x": 0.04,
                                             "y": 0.2900232018561485,
-                                            "uniqueID": 1738124213852,
+                                            "uniqueID": 1738124292902,
                                             "ioValues": [],
                                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                                             "type": "number"
@@ -3536,7 +3550,7 @@
                                             "name": "Height",
                                             "x": 0.04,
                                             "y": 0.44083526682134566,
-                                            "uniqueID": 1738124213874,
+                                            "uniqueID": 1738124292730,
                                             "ioValues": [],
                                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                                             "type": "number"
@@ -3546,7 +3560,7 @@
                                             "name": "Radius",
                                             "x": 0.04,
                                             "y": 0.6334106728538283,
-                                            "uniqueID": 1738124214045,
+                                            "uniqueID": 1738124293576,
                                             "ioValues": [],
                                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                                             "type": "number"
@@ -3556,11 +3570,11 @@
                                             "name": "Circle",
                                             "x": 0.1363080684596577,
                                             "y": 0.6821345707656613,
-                                            "uniqueID": 1738124213491,
+                                            "uniqueID": 1738124292793,
                                             "ioValues": [
                                                 {
                                                     "name": "diameter",
-                                                    "ioValue": 2
+                                                    "ioValue": 8
                                                 }
                                             ],
                                             "description": "Creates a new circle."
@@ -3570,11 +3584,11 @@
                                             "name": "2*R",
                                             "x": 0.09229828850855747,
                                             "y": 0.8863109048723898,
-                                            "uniqueID": 1738124214248,
+                                            "uniqueID": 1738124293478,
                                             "ioValues": [
                                                 {
                                                     "name": "R",
-                                                    "ioValue": 1
+                                                    "ioValue": 4
                                                 }
                                             ],
                                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -3585,15 +3599,15 @@
                                             "name": "(H/2)-R",
                                             "x": 0.20476772616136918,
                                             "y": 0.30394431554524365,
-                                            "uniqueID": 1738124213868,
+                                            "uniqueID": 1738124292680,
                                             "ioValues": [
                                                 {
                                                     "name": "H",
-                                                    "ioValue": 10
+                                                    "ioValue": 39
                                                 },
                                                 {
                                                     "name": "R",
-                                                    "ioValue": 1
+                                                    "ioValue": 4
                                                 }
                                             ],
                                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -3604,19 +3618,19 @@
                                             "name": "Move",
                                             "x": 0.49816625916870416,
                                             "y": 0.18329466357308585,
-                                            "uniqueID": 1738124213580,
+                                            "uniqueID": 1738124293508,
                                             "ioValues": [
                                                 {
                                                     "name": "geometry",
-                                                    "ioValue": 1734244770194
+                                                    "ioValue": 1738124292793
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": 4
+                                                    "ioValue": 31
                                                 },
                                                 {
                                                     "name": "yDist",
-                                                    "ioValue": 4
+                                                    "ioValue": 15.5
                                                 },
                                                 {
                                                     "name": "zDist",
@@ -3630,7 +3644,7 @@
                                             "name": "Rectangle",
                                             "x": 0.7249388753056235,
                                             "y": 0.6821345707656613,
-                                            "uniqueID": 1738124213701,
+                                            "uniqueID": 1738124292679,
                                             "ioValues": [
                                                 {
                                                     "name": "x length",
@@ -3648,15 +3662,15 @@
                                             "name": "(W/2)-R",
                                             "x": 0.19498777506112472,
                                             "y": 0.16009280742459397,
-                                            "uniqueID": 1738124213959,
+                                            "uniqueID": 1738124292840,
                                             "ioValues": [
                                                 {
                                                     "name": "W",
-                                                    "ioValue": 10
+                                                    "ioValue": 70
                                                 },
                                                 {
                                                     "name": "R",
-                                                    "ioValue": 1
+                                                    "ioValue": 4
                                                 }
                                             ],
                                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -3667,15 +3681,15 @@
                                             "name": "-1*((H/2)-R)",
                                             "x": 0.22493887530562345,
                                             "y": 0.43387470997679817,
-                                            "uniqueID": 1738124214364,
+                                            "uniqueID": 1738124293160,
                                             "ioValues": [
                                                 {
                                                     "name": "H",
-                                                    "ioValue": 10
+                                                    "ioValue": 39
                                                 },
                                                 {
                                                     "name": "R",
-                                                    "ioValue": 1
+                                                    "ioValue": 4
                                                 }
                                             ],
                                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -3686,19 +3700,19 @@
                                             "name": "Move",
                                             "x": 0.49877750611246946,
                                             "y": 0.40139211136890957,
-                                            "uniqueID": 1738124213438,
+                                            "uniqueID": 1738124293000,
                                             "ioValues": [
                                                 {
                                                     "name": "geometry",
-                                                    "ioValue": 1734244770194
+                                                    "ioValue": 1738124292793
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": 4
+                                                    "ioValue": 31
                                                 },
                                                 {
                                                     "name": "yDist",
-                                                    "ioValue": -4
+                                                    "ioValue": -15.5
                                                 },
                                                 {
                                                     "name": "zDist",
@@ -3712,19 +3726,19 @@
                                             "name": "Move",
                                             "x": 0.4596577017114914,
                                             "y": 0.6310904872389792,
-                                            "uniqueID": 1738124213968,
+                                            "uniqueID": 1738124293149,
                                             "ioValues": [
                                                 {
                                                     "name": "geometry",
-                                                    "ioValue": 1734244770194
+                                                    "ioValue": 1738124292793
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": -4
+                                                    "ioValue": -31
                                                 },
                                                 {
                                                     "name": "yDist",
-                                                    "ioValue": 4
+                                                    "ioValue": 15.5
                                                 },
                                                 {
                                                     "name": "zDist",
@@ -3738,19 +3752,19 @@
                                             "name": "Move",
                                             "x": 0.4315403422982885,
                                             "y": 0.877030162412993,
-                                            "uniqueID": 1738124213634,
+                                            "uniqueID": 1738124293475,
                                             "ioValues": [
                                                 {
                                                     "name": "geometry",
-                                                    "ioValue": 1734244770194
+                                                    "ioValue": 1738124292793
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": -4
+                                                    "ioValue": -31
                                                 },
                                                 {
                                                     "name": "yDist",
-                                                    "ioValue": -4
+                                                    "ioValue": -15.5
                                                 },
                                                 {
                                                     "name": "zDist",
@@ -3764,15 +3778,15 @@
                                             "name": "-1*((W/2)-R)",
                                             "x": 0.2298288508557457,
                                             "y": 0.5893271461716937,
-                                            "uniqueID": 1738124214300,
+                                            "uniqueID": 1738124293329,
                                             "ioValues": [
                                                 {
                                                     "name": "W",
-                                                    "ioValue": 10
+                                                    "ioValue": 70
                                                 },
                                                 {
                                                     "name": "R",
-                                                    "ioValue": 1
+                                                    "ioValue": 4
                                                 }
                                             ],
                                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -3783,23 +3797,23 @@
                                             "name": "Shrink Wrap",
                                             "x": 0.6515892420537898,
                                             "y": 0.34802784222737815,
-                                            "uniqueID": 1738124214248,
+                                            "uniqueID": 1738124292919,
                                             "ioValues": [
                                                 {
                                                     "name": "Shape 1",
-                                                    "ioValue": 1734244951314
+                                                    "ioValue": 1738124293475
                                                 },
                                                 {
                                                     "name": "Shape 2",
-                                                    "ioValue": 1734244949229
+                                                    "ioValue": 1738124293149
                                                 },
                                                 {
                                                     "name": "Shape 3",
-                                                    "ioValue": 1734244947459
+                                                    "ioValue": 1738124293000
                                                 },
                                                 {
                                                     "name": "Shape 4",
-                                                    "ioValue": 1734244812803
+                                                    "ioValue": 1738124293508
                                                 },
                                                 {
                                                     "name": "Shape 5",
@@ -3807,19 +3821,19 @@
                                                 },
                                                 {
                                                     "name": "Shape 1",
-                                                    "ioValue": 1734244951314
+                                                    "ioValue": 1738124293475
                                                 },
                                                 {
                                                     "name": "Shape 2",
-                                                    "ioValue": 1734244949229
+                                                    "ioValue": 1738124293149
                                                 },
                                                 {
                                                     "name": "Shape 3",
-                                                    "ioValue": 1734244947459
+                                                    "ioValue": 1738124293000
                                                 },
                                                 {
                                                     "name": "Shape 4",
-                                                    "ioValue": 1734244812803
+                                                    "ioValue": 1738124293508
                                                 },
                                                 {
                                                     "name": "Shape 5",
@@ -3834,190 +3848,190 @@
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "W",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213852,
-                                            "ap2ID": 1738124213959
+                                            "ap1ID": 1738124292902,
+                                            "ap2ID": 1738124292840
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "W",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213852,
-                                            "ap2ID": 1738124214300
+                                            "ap1ID": 1738124292902,
+                                            "ap2ID": 1738124293329
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "H",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213874,
-                                            "ap2ID": 1738124213868
+                                            "ap1ID": 1738124292730,
+                                            "ap2ID": 1738124292680
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "H",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213874,
-                                            "ap2ID": 1738124214364
+                                            "ap1ID": 1738124292730,
+                                            "ap2ID": 1738124293160
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "R",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214045,
-                                            "ap2ID": 1738124214248
+                                            "ap1ID": 1738124293576,
+                                            "ap2ID": 1738124293478
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "R",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214045,
-                                            "ap2ID": 1738124213868
+                                            "ap1ID": 1738124293576,
+                                            "ap2ID": 1738124292680
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "R",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214045,
-                                            "ap2ID": 1738124213959
+                                            "ap1ID": 1738124293576,
+                                            "ap2ID": 1738124292840
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "R",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214045,
-                                            "ap2ID": 1738124214364
+                                            "ap1ID": 1738124293576,
+                                            "ap2ID": 1738124293160
                                         },
                                         {
                                             "ap1Name": "number or geometry",
                                             "ap2Name": "R",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214045,
-                                            "ap2ID": 1738124214300
+                                            "ap1ID": 1738124293576,
+                                            "ap2ID": 1738124293329
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "geometry",
                                             "ap2Primary": true,
-                                            "ap1ID": 1738124213491,
-                                            "ap2ID": 1738124213580
+                                            "ap1ID": 1738124292793,
+                                            "ap2ID": 1738124293508
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "geometry",
                                             "ap2Primary": true,
-                                            "ap1ID": 1738124213491,
-                                            "ap2ID": 1738124213438
+                                            "ap1ID": 1738124292793,
+                                            "ap2ID": 1738124293000
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "geometry",
                                             "ap2Primary": true,
-                                            "ap1ID": 1738124213491,
-                                            "ap2ID": 1738124213634
+                                            "ap1ID": 1738124292793,
+                                            "ap2ID": 1738124293475
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "geometry",
                                             "ap2Primary": true,
-                                            "ap1ID": 1738124213491,
-                                            "ap2ID": 1738124213968
+                                            "ap1ID": 1738124292793,
+                                            "ap2ID": 1738124293149
+                                        },
+                                        {
+                                            "ap1Name": "result",
+                                            "ap2Name": "diameter",
+                                            "ap2Primary": false,
+                                            "ap1ID": 1738124293478,
+                                            "ap2ID": 1738124292793
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "yDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213868,
-                                            "ap2ID": 1738124213580
+                                            "ap1ID": 1738124292680,
+                                            "ap2ID": 1738124293508
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "yDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213868,
-                                            "ap2ID": 1738124213968
+                                            "ap1ID": 1738124292680,
+                                            "ap2ID": 1738124293149
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "Shape 4",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213580,
-                                            "ap2ID": 1738124214248
+                                            "ap1ID": 1738124293508,
+                                            "ap2ID": 1738124292919
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "xDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213959,
-                                            "ap2ID": 1738124213580
+                                            "ap1ID": 1738124292840,
+                                            "ap2ID": 1738124293508
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "xDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213959,
-                                            "ap2ID": 1738124213438
+                                            "ap1ID": 1738124292840,
+                                            "ap2ID": 1738124293000
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "yDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214364,
-                                            "ap2ID": 1738124213438
+                                            "ap1ID": 1738124293160,
+                                            "ap2ID": 1738124293000
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "yDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214364,
-                                            "ap2ID": 1738124213634
+                                            "ap1ID": 1738124293160,
+                                            "ap2ID": 1738124293475
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "Shape 3",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213438,
-                                            "ap2ID": 1738124214248
+                                            "ap1ID": 1738124293000,
+                                            "ap2ID": 1738124292919
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "Shape 2",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213968,
-                                            "ap2ID": 1738124214248
+                                            "ap1ID": 1738124293149,
+                                            "ap2ID": 1738124292919
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "Shape 1",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124213634,
-                                            "ap2ID": 1738124214248
+                                            "ap1ID": 1738124293475,
+                                            "ap2ID": 1738124292919
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "xDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214300,
-                                            "ap2ID": 1738124213634
+                                            "ap1ID": 1738124293329,
+                                            "ap2ID": 1738124293475
                                         },
                                         {
                                             "ap1Name": "result",
                                             "ap2Name": "xDist",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214300,
-                                            "ap2ID": 1738124213968
-                                        },
-                                        {
-                                            "ap1Name": "geometry",
-                                            "ap2Name": "diameter",
-                                            "ap2Primary": false,
-                                            "ap1ID": 1738124214248,
-                                            "ap2ID": 1738124213491
+                                            "ap1ID": 1738124293329,
+                                            "ap2ID": 1738124293149
                                         },
                                         {
                                             "ap1Name": "geometry",
                                             "ap2Name": "number or geometry",
                                             "ap2Primary": false,
-                                            "ap1ID": 1738124214248,
-                                            "ap2ID": 1738124213836
+                                            "ap1ID": 1738124292919,
+                                            "ap2ID": 1738124292925
                                         }
                                     ],
                                     "parentRepo": {
@@ -4043,11 +4057,92 @@
                                     "unitsKey": "MM",
                                     "fileTypeVersion": 1,
                                     "compiledBom": []
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.3988095238095238,
+                                    "y": 0.4317548746518106,
+                                    "uniqueID": 1738124315590,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738124292853
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": 17
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Color",
+                                    "name": "Color",
+                                    "x": 0.5634920634920635,
+                                    "y": 0.4512534818941504,
+                                    "uniqueID": 1738124337189,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738124315590
+                                        }
+                                    ],
+                                    "description": "Changes the color of the shape.",
+                                    "selectedColorIndex": 21
                                 }
                             ],
-                            "allConnectors": [],
+                            "allConnectors": [
+                                {
+                                    "ap1Name": "Geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738124292853,
+                                    "ap2ID": 1738124315590
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738124315590,
+                                    "ap2ID": 1738124337189
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738124337189,
+                                    "ap2ID": 1738124188760
+                                }
+                            ],
                             "fileTypeVersion": 1,
-                            "compiledBom": {}
+                            "compiledBom": []
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.6283068783068784,
+                            "y": 0.6824512534818942,
+                            "uniqueID": 1738124346601,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1738124189084
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 33
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
                         }
                     ],
                     "allConnectors": [
@@ -4119,6 +4214,20 @@
                             "ap2Name": "Shape 5",
                             "ap2Primary": false,
                             "ap1ID": 1737775129120,
+                            "ap2ID": 1737774095046
+                        },
+                        {
+                            "ap1Name": "Geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1738124189084,
+                            "ap2ID": 1738124346601
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 6",
+                            "ap2Primary": false,
+                            "ap1ID": 1738124346601,
                             "ap2ID": 1737774095046
                         }
                     ],
