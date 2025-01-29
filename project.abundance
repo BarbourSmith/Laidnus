@@ -6873,7 +6873,7 @@
                 },
                 {
                     "name": "File Type",
-                    "ioValue": "SVG"
+                    "ioValue": "STEP"
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
