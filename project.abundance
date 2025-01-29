@@ -2575,7 +2575,8 @@
                                 }
                             ],
                             "description": "Extracts geometry containing the specified tag.",
-                            "tagIndex": 0
+                            "tag": "Wood",
+                            "tagIndex": 1
                         },
                         {
                             "atomType": "Molecule",
@@ -5467,7 +5468,7 @@
                                         },
                                         {
                                             "name": "yDist",
-                                            "ioValue": 33
+                                            "ioValue": 36
                                         },
                                         {
                                             "name": "zDist",
@@ -10033,7 +10034,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 20
+                    "ioValue": 24
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -10243,8 +10244,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.6455026455026455,
-            "y": 0.27019498607242337,
+            "x": 0.6362433862433862,
+            "y": 0.2757660167130919,
             "uniqueID": 1738111822881,
             "ioValues": [
                 {
@@ -10259,8 +10260,8 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.8306878306878307,
-            "y": 0.3342618384401114,
+            "x": 0.8326719576719576,
+            "y": 0.34818941504178275,
             "uniqueID": 1738111964224,
             "ioValues": [
                 {
