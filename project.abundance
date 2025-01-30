@@ -2466,7 +2466,12 @@
                                             "x": 0.98,
                                             "y": 0.5,
                                             "uniqueID": 1738264600631,
-                                            "ioValues": [],
+                                            "ioValues": [
+                                                {
+                                                    "name": "number or geometry",
+                                                    "ioValue": 1738265069358
+                                                }
+                                            ],
                                             "description": "Connect geometry here to make it available in the next level up. "
                                         },
                                         {
@@ -2622,8 +2627,8 @@
                                         {
                                             "atomType": "Fusion",
                                             "name": "Fusion",
-                                            "x": 0.5958994708994709,
-                                            "y": 0.5236768802228412,
+                                            "x": 0.6626984126984128,
+                                            "y": 0.22841225626740946,
                                             "uniqueID": 1738264904157,
                                             "ioValues": [
                                                 {
@@ -2637,6 +2642,118 @@
                                             ],
                                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                                             "unionType": "Fusion"
+                                        },
+                                        {
+                                            "atomType": "Circle",
+                                            "name": "Circle",
+                                            "x": 0.8062169312169312,
+                                            "y": 0.8802228412256267,
+                                            "uniqueID": 1738265045785,
+                                            "ioValues": [
+                                                {
+                                                    "name": "diameter",
+                                                    "ioValue": 4.5
+                                                }
+                                            ],
+                                            "description": "Creates a new circle."
+                                        },
+                                        {
+                                            "atomType": "Extrude",
+                                            "name": "Extrude",
+                                            "x": 0.8968253968253969,
+                                            "y": 0.7743732590529249,
+                                            "uniqueID": 1738265064394,
+                                            "ioValues": [
+                                                {
+                                                    "name": "geometry",
+                                                    "ioValue": 1738265045785
+                                                },
+                                                {
+                                                    "name": "height",
+                                                    "ioValue": 4.5
+                                                }
+                                            ],
+                                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                                        },
+                                        {
+                                            "atomType": "Difference",
+                                            "name": "Difference",
+                                            "x": 0.9107142857142856,
+                                            "y": 0.24233983286908078,
+                                            "uniqueID": 1738265069358,
+                                            "ioValues": [
+                                                {
+                                                    "name": "geometry2",
+                                                    "ioValue": 1738265064394
+                                                },
+                                                {
+                                                    "name": "geometry1",
+                                                    "ioValue": 1738264904157
+                                                }
+                                            ],
+                                            "description": "Subtracts shape two from shape one."
+                                        },
+                                        {
+                                            "atomType": "Rectangle",
+                                            "name": "Rectangle",
+                                            "x": 0.45965608465608465,
+                                            "y": 0.8412256267409471,
+                                            "uniqueID": 1738265105423,
+                                            "ioValues": [
+                                                {
+                                                    "name": "x length",
+                                                    "ioValue": 1
+                                                },
+                                                {
+                                                    "name": "y length",
+                                                    "ioValue": 1
+                                                }
+                                            ],
+                                            "description": "Creates a new rectangle."
+                                        },
+                                        {
+                                            "atomType": "Extrude",
+                                            "name": "Extrude",
+                                            "x": 0.6084656084656085,
+                                            "y": 0.796657381615599,
+                                            "uniqueID": 1738265125810,
+                                            "ioValues": [
+                                                {
+                                                    "name": "geometry",
+                                                    "ioValue": 1738265105423
+                                                },
+                                                {
+                                                    "name": "height",
+                                                    "ioValue": 10
+                                                }
+                                            ],
+                                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                                        },
+                                        {
+                                            "atomType": "Rotate",
+                                            "name": "Rotate",
+                                            "x": 0.6904761904761905,
+                                            "y": 0.7270194986072424,
+                                            "uniqueID": 1738265136442,
+                                            "ioValues": [
+                                                {
+                                                    "name": "geometry",
+                                                    "ioValue": 1738265125810
+                                                },
+                                                {
+                                                    "name": "x-axis degrees",
+                                                    "ioValue": 0
+                                                },
+                                                {
+                                                    "name": "y-axis degrees",
+                                                    "ioValue": 0
+                                                },
+                                                {
+                                                    "name": "z-axis degrees",
+                                                    "ioValue": 45
+                                                }
+                                            ],
+                                            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                                         }
                                     ],
                                     "allConnectors": [
@@ -2695,10 +2812,52 @@
                                             "ap2Primary": false,
                                             "ap1ID": 1738264894622,
                                             "ap2ID": 1738264904157
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "geometry1",
+                                            "ap2Primary": false,
+                                            "ap1ID": 1738264904157,
+                                            "ap2ID": 1738265069358
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "geometry",
+                                            "ap2Primary": true,
+                                            "ap1ID": 1738265045785,
+                                            "ap2ID": 1738265064394
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "geometry2",
+                                            "ap2Primary": false,
+                                            "ap1ID": 1738265064394,
+                                            "ap2ID": 1738265069358
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "number or geometry",
+                                            "ap2Primary": false,
+                                            "ap1ID": 1738265069358,
+                                            "ap2ID": 1738264600631
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "geometry",
+                                            "ap2Primary": true,
+                                            "ap1ID": 1738265105423,
+                                            "ap2ID": 1738265125810
+                                        },
+                                        {
+                                            "ap1Name": "geometry",
+                                            "ap2Name": "geometry",
+                                            "ap2Primary": true,
+                                            "ap1ID": 1738265125810,
+                                            "ap2ID": 1738265136442
                                         }
                                     ],
                                     "fileTypeVersion": 1,
-                                    "compiledBom": {}
+                                    "compiledBom": []
                                 }
                             ],
                             "allConnectors": [
