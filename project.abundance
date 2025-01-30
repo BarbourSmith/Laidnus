@@ -1126,6 +1126,10 @@
                                 {
                                     "name": "Shape 7",
                                     "ioValue": 1738124189084
+                                },
+                                {
+                                    "name": "Shape 8",
+                                    "ioValue": 1738273882907
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -7198,8 +7202,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Hole Plate",
-                            "x": 0.7734241908006815,
-                            "y": 0.6155988857938719,
+                            "x": 0.22316865417376494,
+                            "y": 0.47075208913649025,
                             "uniqueID": 1738272255879,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -7211,14 +7215,19 @@
                                     "x": 0.98,
                                     "y": 0.5,
                                     "uniqueID": 1738272255869,
-                                    "ioValues": [],
+                                    "ioValues": [
+                                        {
+                                            "name": "number or geometry",
+                                            "ioValue": 1738273855636
+                                        }
+                                    ],
                                     "description": "Connect geometry here to make it available in the next level up. "
                                 },
                                 {
                                     "atomType": "Circle",
                                     "name": "Circle",
-                                    "x": 0.1865079365079365,
-                                    "y": 0.532033426183844,
+                                    "x": 0.16524701873935266,
+                                    "y": 0.2646239554317549,
                                     "uniqueID": 1738272264795,
                                     "ioValues": [
                                         {
@@ -7231,17 +7240,17 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.3115079365079365,
-                                    "y": 0.6100278551532033,
+                                    "x": 0.44718909710391824,
+                                    "y": 0.39275766016713093,
                                     "uniqueID": 1738272271991,
                                     "ioValues": [
                                         {
                                             "name": "geometry",
-                                            "ioValue": 1738272264795
+                                            "ioValue": 1738273755987
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 2
+                                            "ioValue": 1.5
                                         }
                                     ],
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -7249,8 +7258,8 @@
                                 {
                                     "atomType": "Code",
                                     "name": "Code",
-                                    "x": 0.511904761904762,
-                                    "y": 0.5877437325905293,
+                                    "x": 0.540885860306644,
+                                    "y": 0.20891364902506962,
                                     "uniqueID": 1738272431381,
                                     "ioValues": [
                                         {
@@ -7260,20 +7269,273 @@
                                     ],
                                     "description": "Defines a Replicad code block.",
                                     "codeVersion": 1,
-                                    "code": " \n//Inputs:[inputShape];\n\nlet shape = replicad.drawCircle(12).cut(replicad.drawCircle(2))\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\nconst roundedShape = shape.sketchOnPlane(newPlane).extrude(3).fillet(1.4);\n\n return { geometry: [roundedShape], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane,\n      bom: []}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                                    "code": " \n//Inputs:[inputShape];\n\nlet shape = replicad.drawCircle(6).cut(replicad.drawCircle(1))\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\nconst roundedShape = shape.sketchOnPlane(newPlane).extrude(3).fillet(1.4);\n\n return { geometry: [roundedShape], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane,\n      bom: []}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                                },
+                                {
+                                    "atomType": "Fusion",
+                                    "name": "Fusion",
+                                    "x": 0.7402044293015332,
+                                    "y": 0.44846796657381616,
+                                    "uniqueID": 1738273737947,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1738272271991
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1738272431381
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": 1738273806108
+                                        }
+                                    ],
+                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                                    "unionType": "Fusion"
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.1354344122657581,
+                                    "y": 0.5264623955431754,
+                                    "uniqueID": 1738273750421,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 2
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Difference",
+                                    "name": "Difference",
+                                    "x": 0.3287904599659284,
+                                    "y": 0.415041782729805,
+                                    "uniqueID": 1738273755987,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry2",
+                                            "ioValue": 1738273750421
+                                        },
+                                        {
+                                            "name": "geometry1",
+                                            "ioValue": 1738272264795
+                                        }
+                                    ],
+                                    "description": "Subtracts shape two from shape one."
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.3296422487223169,
+                                    "y": 0.7520891364902507,
+                                    "uniqueID": 1738273792310,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 4
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.5579216354344123,
+                                    "y": 0.6991643454038997,
+                                    "uniqueID": 1738273806108,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738273818815
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": -3
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Difference",
+                                    "name": "Difference",
+                                    "x": 0.399488926746167,
+                                    "y": 0.6072423398328691,
+                                    "uniqueID": 1738273818815,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry2",
+                                            "ioValue": 1738273750421
+                                        },
+                                        {
+                                            "name": "geometry1",
+                                            "ioValue": 1738273792310
+                                        }
+                                    ],
+                                    "description": "Subtracts shape two from shape one."
+                                },
+                                {
+                                    "atomType": "Color",
+                                    "name": "Color",
+                                    "x": 0.8747870528109029,
+                                    "y": 0.4094707520891365,
+                                    "uniqueID": 1738273855636,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738273737947
+                                        }
+                                    ],
+                                    "description": "Changes the color of the shape.",
+                                    "selectedColorIndex": 14
+                                },
+                                {
+                                    "atomType": "Export",
+                                    "name": "Export",
+                                    "x": 0.8185689948892674,
+                                    "y": 0.7799442896935932,
+                                    "uniqueID": 1738273967030,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738273737947
+                                        },
+                                        {
+                                            "name": "Resolution (dpi)",
+                                            "ioValue": 72
+                                        },
+                                        {
+                                            "name": "Part Name",
+                                            "ioValue": "Hole Plate"
+                                        },
+                                        {
+                                            "name": "File Type",
+                                            "ioValue": "STL"
+                                        }
+                                    ],
+                                    "description": "Export Atom, let's you choose a type of file to Export.",
+                                    "type": null,
+                                    "resolution": 96,
+                                    "importIndex": 0,
+                                    "fileName": null
                                 }
                             ],
                             "allConnectors": [
                                 {
                                     "ap1Name": "geometry",
+                                    "ap2Name": "geometry1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738272264795,
+                                    "ap2ID": 1738273755987
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738272271991,
+                                    "ap2ID": 1738273737947
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738272431381,
+                                    "ap2ID": 1738273737947
+                                },
+                                {
+                                    "ap1Name": "geometry",
                                     "ap2Name": "geometry",
                                     "ap2Primary": true,
-                                    "ap1ID": 1738272264795,
+                                    "ap1ID": 1738273737947,
+                                    "ap2ID": 1738273855636
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273737947,
+                                    "ap2ID": 1738273967030
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273750421,
+                                    "ap2ID": 1738273755987
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273750421,
+                                    "ap2ID": 1738273818815
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738273755987,
                                     "ap2ID": 1738272271991
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273792310,
+                                    "ap2ID": 1738273818815
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 3",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273806108,
+                                    "ap2ID": 1738273737947
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738273818815,
+                                    "ap2ID": 1738273806108
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "number or geometry",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738273855636,
+                                    "ap2ID": 1738272255869
                                 }
                             ],
                             "fileTypeVersion": 1,
-                            "compiledBom": {}
+                            "compiledBom": []
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.37223168654173766,
+                            "y": 0.47632311977715874,
+                            "uniqueID": 1738273882907,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1738272255879
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": -20
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 24
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
                         }
                     ],
                     "allConnectors": [
@@ -7352,6 +7614,20 @@
                             "ap2Name": "Shape 7",
                             "ap2Primary": false,
                             "ap1ID": 1738124189084,
+                            "ap2ID": 1737774095046
+                        },
+                        {
+                            "ap1Name": "Geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1738272255879,
+                            "ap2ID": 1738273882907
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 8",
+                            "ap2Primary": false,
+                            "ap1ID": 1738273882907,
                             "ap2ID": 1737774095046
                         }
                     ],
