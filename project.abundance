@@ -1135,7 +1135,7 @@
                         {
                             "atomType": "Molecule",
                             "name": "Actuator Servo",
-                            "x": 0.1097883597883598,
+                            "x": 0.1111111111111111,
                             "y": 0.777158774373259,
                             "uniqueID": 1737774175724,
                             "ioValues": [],
@@ -2589,7 +2589,7 @@
                                         },
                                         {
                                             "name": "y length",
-                                            "ioValue": 31.5
+                                            "ioValue": 20
                                         }
                                     ],
                                     "description": "Creates a new rectangle."
@@ -2615,8 +2615,8 @@
                                 {
                                     "atomType": "Color",
                                     "name": "Color",
-                                    "x": 0.38227513227513227,
-                                    "y": 0.818941504178273,
+                                    "x": 0.38293650793650796,
+                                    "y": 0.8161559888579387,
                                     "uniqueID": 1738123447218,
                                     "ioValues": [
                                         {
@@ -2637,6 +2637,10 @@
                                         {
                                             "name": "Shape 2",
                                             "ioValue": 1737774458331
+                                        },
+                                        {
+                                            "name": "Shape 3",
+                                            "ioValue": 1738123447218
                                         }
                                     ],
                                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -3455,6 +3459,13 @@
                                     "ap2Primary": true,
                                     "ap1ID": 1738123436313,
                                     "ap2ID": 1738123470234
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 3",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738123447218,
+                                    "ap2ID": 1738123453960
                                 },
                                 {
                                     "ap1Name": "geometry",
@@ -11889,8 +11900,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.6362433862433862,
-            "y": 0.2757660167130919,
+            "x": 0.6382275132275131,
+            "y": 0.2618384401114206,
             "uniqueID": 1738111822881,
             "ioValues": [
                 {
@@ -11900,7 +11911,7 @@
             ],
             "description": "Extracts geometry containing the specified tag.",
             "tag": "Wood",
-            "tagIndex": 1
+            "tagIndex": 0
         },
         {
             "atomType": "Export",
