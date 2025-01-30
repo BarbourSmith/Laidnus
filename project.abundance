@@ -7047,7 +7047,7 @@
                                 },
                                 {
                                     "name": "Part Name",
-                                    "ioValue": "Side Test"
+                                    "ioValue": "Upright"
                                 },
                                 {
                                     "name": "File Type",
@@ -7138,8 +7138,8 @@
                                 {
                                     "atomType": "Extrude",
                                     "name": "Extrude",
-                                    "x": 0.5165343915343915,
-                                    "y": 0.520891364902507,
+                                    "x": 0.5145502645502645,
+                                    "y": 0.5264623955431754,
                                     "uniqueID": 1734808997705,
                                     "ioValues": [
                                         {
@@ -7229,7 +7229,7 @@
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 13
+                                            "ioValue": 13.4
                                         }
                                     ],
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
