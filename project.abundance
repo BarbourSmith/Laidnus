@@ -4889,7 +4889,7 @@
                                         },
                                         {
                                             "name": "yDist",
-                                            "ioValue": -4
+                                            "ioValue": -5
                                         },
                                         {
                                             "name": "zDist",
@@ -6143,8 +6143,8 @@
                                 {
                                     "atomType": "Fusion",
                                     "name": "Fusion",
-                                    "x": 0.8240740740740741,
-                                    "y": 0.7075208913649026,
+                                    "x": 0.8234126984126985,
+                                    "y": 0.7381615598885795,
                                     "uniqueID": 1738174821033,
                                     "ioValues": [
                                         {
@@ -6561,7 +6561,7 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 0
+                                    "ioValue": 5
                                 },
                                 {
                                     "name": "zDist",
@@ -7801,17 +7801,17 @@
                         },
                         {
                             "ap1Name": "geometry",
-                            "ap2Name": "number or geometry",
-                            "ap2Primary": false,
-                            "ap1ID": 1737774095046,
-                            "ap2ID": 1737773944628
-                        },
-                        {
-                            "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
                             "ap1ID": 1737774095046,
                             "ap2ID": 1737775010323
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1737774095046,
+                            "ap2ID": 1737773944628
                         },
                         {
                             "ap1Name": "Geometry",
@@ -7941,20 +7941,6 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
-                },
-                {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.4358465608465608,
-                    "y": 0.777158774373259,
-                    "uniqueID": 1738610852592,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 98
-                        }
-                    ],
-                    "description": "Creates a new circle."
                 }
             ],
             "allConnectors": [
