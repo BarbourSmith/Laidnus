@@ -1255,7 +1255,7 @@
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": -1.71
+                                                    "ioValue": -1.72
                                                 },
                                                 {
                                                     "name": "yDist",
@@ -1333,8 +1333,8 @@
                                         {
                                             "atomType": "Move",
                                             "name": "Move",
-                                            "x": 0.36507936507936506,
-                                            "y": 0.871866295264624,
+                                            "x": 0.3644179894179894,
+                                            "y": 0.8690807799442898,
                                             "uniqueID": 1738623580158,
                                             "ioValues": [
                                                 {
@@ -1343,7 +1343,7 @@
                                                 },
                                                 {
                                                     "name": "xDist",
-                                                    "ioValue": 1.71
+                                                    "ioValue": 1.72
                                                 },
                                                 {
                                                     "name": "yDist",
@@ -1579,7 +1579,7 @@
                                     "ioValues": [
                                         {
                                             "name": "geometry",
-                                            "ioValue": ""
+                                            "ioValue": 1738623807704
                                         },
                                         {
                                             "name": "xDist",
@@ -1914,6 +1914,13 @@
                                     "ap2Primary": true,
                                     "ap1ID": 1738623786714,
                                     "ap2ID": 1738623807704
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738623807704,
+                                    "ap2ID": 1738623842883
                                 },
                                 {
                                     "ap1Name": "geometry",
