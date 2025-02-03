@@ -1906,8 +1906,8 @@
                                 {
                                     "atomType": "Assembly",
                                     "name": "Assembly",
-                                    "x": 0.7738095238095237,
-                                    "y": 0.42061281337047357,
+                                    "x": 0.7764550264550265,
+                                    "y": 0.43732590529247906,
                                     "uniqueID": 1738625237382,
                                     "ioValues": [
                                         {
@@ -1995,7 +1995,7 @@
                                 }
                             ],
                             "fileTypeVersion": 1,
-                            "compiledBom": {}
+                            "compiledBom": []
                         }
                     ],
                     "allConnectors": [
