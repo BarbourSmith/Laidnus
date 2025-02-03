@@ -4089,8 +4089,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Rotate Sero",
-                            "x": 0.3723544973544973,
-                            "y": 0.17548746518105848,
+                            "x": 0.36772486772486773,
+                            "y": 0.17270194986072424,
                             "uniqueID": 1737775059168,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -6186,8 +6186,8 @@
                                         {
                                             "atomType": "GitHubMolecule",
                                             "name": "Simple-Rounded-Gear",
-                                            "x": 0.3873552983081033,
-                                            "y": 0.6601671309192201,
+                                            "x": 0.5238095238095238,
+                                            "y": 0.713091922005571,
                                             "uniqueID": 1738562780031,
                                             "ioValues": [
                                                 {
@@ -6343,8 +6343,8 @@
                                         {
                                             "atomType": "Circle",
                                             "name": "Circle",
-                                            "x": 0.24338624338624337,
-                                            "y": 0.33704735376044564,
+                                            "x": 0.41402116402116407,
+                                            "y": 0.2618384401114206,
                                             "uniqueID": 1738562784910,
                                             "ioValues": [
                                                 {
@@ -6393,8 +6393,8 @@
                                         {
                                             "atomType": "GitHubMolecule",
                                             "name": "Simple-Rounded-Gear",
-                                            "x": 0.22172751558325912,
-                                            "y": 0.777158774373259,
+                                            "x": 0.7956349206349206,
+                                            "y": 0.3203342618384401,
                                             "uniqueID": 1738611322719,
                                             "ioValues": [
                                                 {
@@ -6403,11 +6403,11 @@
                                                 },
                                                 {
                                                     "name": "Teeth",
-                                                    "ioValue": 16
+                                                    "ioValue": 15
                                                 },
                                                 {
                                                     "name": "Step",
-                                                    "ioValue": 1.6
+                                                    "ioValue": 1.71
                                                 }
                                             ],
                                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -6436,11 +6436,11 @@
                                                     "ioValues": [
                                                         {
                                                             "name": "teeth",
-                                                            "ioValue": 16
+                                                            "ioValue": 15
                                                         },
                                                         {
                                                             "name": "step",
-                                                            "ioValue": 1.6
+                                                            "ioValue": 1.71
                                                         },
                                                         {
                                                             "name": "height",
@@ -8175,8 +8175,8 @@
         {
             "atomType": "Molecule",
             "name": "Top",
-            "x": 0.14616402116402116,
-            "y": 0.47075208913649025,
+            "x": 0.1455026455026455,
+            "y": 0.46239554317548753,
             "uniqueID": 1731525187960,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
