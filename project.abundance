@@ -2044,8 +2044,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.5793650793650793,
-                            "y": 0.8607242339832869,
+                            "x": 0.582010582010582,
+                            "y": 0.8579387186629527,
                             "uniqueID": 1738625503775,
                             "ioValues": [
                                 {
@@ -2068,24 +2068,6 @@
                             "description": "Moves a shape laterally in X, Y, Z."
                         },
                         {
-                            "atomType": "Assembly",
-                            "name": "Assembly",
-                            "x": 0.7394179894179894,
-                            "y": 0.8635097493036212,
-                            "uniqueID": 1738625652437,
-                            "ioValues": [
-                                {
-                                    "name": "Shape 1",
-                                    "ioValue": 1738264328800
-                                },
-                                {
-                                    "name": "Shape 2",
-                                    "ioValue": 1738625503775
-                                }
-                            ],
-                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                        },
-                        {
                             "atomType": "Export",
                             "name": "Export",
                             "x": 0.8796296296296297,
@@ -2094,7 +2076,7 @@
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": 1738625652437
+                                    "ioValue": ""
                                 },
                                 {
                                     "name": "Resolution (dpi)",
@@ -2114,6 +2096,25 @@
                             "resolution": 96,
                             "importIndex": 0,
                             "fileName": null
+                        },
+                        {
+                            "atomType": "Fusion",
+                            "name": "Fusion",
+                            "x": 0.7433862433862434,
+                            "y": 0.8495821727019498,
+                            "uniqueID": 1738626528777,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1738625503775
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1738264328800
+                                }
+                            ],
+                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                            "unionType": "Fusion"
                         }
                     ],
                     "allConnectors": [
@@ -2154,10 +2155,10 @@
                         },
                         {
                             "ap1Name": "geometry",
-                            "ap2Name": "Shape 1",
+                            "ap2Name": "Shape 2",
                             "ap2Primary": false,
                             "ap1ID": 1738264328800,
-                            "ap2ID": 1738625652437
+                            "ap2ID": 1738626528777
                         },
                         {
                             "ap1Name": "Geometry",
@@ -2182,17 +2183,10 @@
                         },
                         {
                             "ap1Name": "geometry",
-                            "ap2Name": "Shape 2",
+                            "ap2Name": "Shape 1",
                             "ap2Primary": false,
                             "ap1ID": 1738625503775,
-                            "ap2ID": 1738625652437
-                        },
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "geometry",
-                            "ap2Primary": false,
-                            "ap1ID": 1738625652437,
-                            "ap2ID": 1738625791840
+                            "ap2ID": 1738626528777
                         }
                     ],
                     "fileTypeVersion": 1,
