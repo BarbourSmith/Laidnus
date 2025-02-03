@@ -781,8 +781,8 @@
                         {
                             "atomType": "Fusion",
                             "name": "Fusion",
-                            "x": 0.4973544973544974,
-                            "y": 0.7520891364902507,
+                            "x": 0.5125661375661376,
+                            "y": 0.6211699164345404,
                             "uniqueID": 1738270318942,
                             "ioValues": [
                                 {
@@ -826,6 +826,44 @@
                             "resolution": 96,
                             "importIndex": 0,
                             "fileName": null
+                        },
+                        {
+                            "atomType": "Molecule",
+                            "name": "Gear",
+                            "x": 0.6746031746031745,
+                            "y": 0.83008356545961,
+                            "uniqueID": 1738620009885,
+                            "ioValues": [],
+                            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                            "topLevel": false,
+                            "allAtoms": [
+                                {
+                                    "atomType": "Output",
+                                    "name": "Output",
+                                    "x": 0.98,
+                                    "y": 0.5,
+                                    "uniqueID": 1738620009817,
+                                    "ioValues": [],
+                                    "description": "Connect geometry here to make it available in the next level up. "
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.5152116402116402,
+                                    "y": 0.5236768802228412,
+                                    "uniqueID": 1738620021478,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 10
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                }
+                            ],
+                            "allConnectors": [],
+                            "fileTypeVersion": 1,
+                            "compiledBom": {}
                         }
                     ],
                     "allConnectors": [
