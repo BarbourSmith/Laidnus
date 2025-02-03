@@ -6186,8 +6186,8 @@
                                         {
                                             "atomType": "GitHubMolecule",
                                             "name": "Simple-Rounded-Gear",
-                                            "x": 0.4292074799643811,
-                                            "y": 0.6991643454038997,
+                                            "x": 0.3873552983081033,
+                                            "y": 0.6601671309192201,
                                             "uniqueID": 1738562780031,
                                             "ioValues": [
                                                 {
@@ -6389,6 +6389,164 @@
                                                 }
                                             ],
                                             "description": "Extrudes a 2D shape. Input can be negitive. "
+                                        },
+                                        {
+                                            "atomType": "GitHubMolecule",
+                                            "name": "Simple-Rounded-Gear",
+                                            "x": 0.22172751558325912,
+                                            "y": 0.777158774373259,
+                                            "uniqueID": 1738611322719,
+                                            "ioValues": [
+                                                {
+                                                    "name": "Height",
+                                                    "ioValue": 6
+                                                },
+                                                {
+                                                    "name": "Teeth",
+                                                    "ioValue": 16
+                                                },
+                                                {
+                                                    "name": "Step",
+                                                    "ioValue": 1.6
+                                                }
+                                            ],
+                                            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                                            "topLevel": false,
+                                            "allAtoms": [
+                                                {
+                                                    "atomType": "Output",
+                                                    "name": "Output",
+                                                    "x": 0.98,
+                                                    "y": 0.5,
+                                                    "uniqueID": 1738611322473,
+                                                    "ioValues": [
+                                                        {
+                                                            "name": "number or geometry",
+                                                            "ioValue": 1738611323129
+                                                        }
+                                                    ],
+                                                    "description": "Connect geometry here to make it available in the next level up. "
+                                                },
+                                                {
+                                                    "atomType": "Code",
+                                                    "name": "Code",
+                                                    "x": 0.4078361531611754,
+                                                    "y": 0.5041782729805014,
+                                                    "uniqueID": 1738611323129,
+                                                    "ioValues": [
+                                                        {
+                                                            "name": "teeth",
+                                                            "ioValue": 16
+                                                        },
+                                                        {
+                                                            "name": "step",
+                                                            "ioValue": 1.6
+                                                        },
+                                                        {
+                                                            "name": "height",
+                                                            "ioValue": 6
+                                                        }
+                                                    ],
+                                                    "description": "Defines a Replicad code block.",
+                                                    "codeVersion": 1,
+                                                    "code": " \n      //Inputs:[teeth, step, height]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      let angle = 360/(teeth*2); //The angle of each tooth is 1/2 of what would fit to make space for the teeth that come in\n      let radius = (step / 2) / Math.sin(angle / 2 * (Math.PI / 180)); //This is where the teeth circles are positioned\n      let apothem = (step / 2) / Math.tan(angle / 2 * (Math.PI / 180)); //This is the size of the circle that the teeth are subtracted from\n\n      console.log(\"The effective size of the gear is: \");\n      console.log(apothem);\n      console.log(\"The diameter of each tooth is: \");\n      console.log(step/2);\n      \n      //We can also create a new shape from scratch\n      let oneTooth = replicad.drawCircle(step/2)\n      //This is the plane we are going to put our new shape on\n      const newPlane = new Plane();\n      //And we extrude the shape to make it 3D\n      let createdShape = oneTooth.sketchOnPlane(newPlane).extrude(height).translate([radius, 0, 0]);\n\n      let fusedShape = createdShape.clone();\n\n      for (let i = 1; i < teeth; i++) {\n        fusedShape = fusedShape.fuse(createdShape.clone().rotate(2*angle*i, [0, 0, 0], [0, 0, 1]))\n      } \n\n      //We can also create a new shape from scratch\n      let center = replicad.drawCircle(apothem)\n      //This is the plane we are going to put our new shape on\n      const newPlane2 = new Plane();\n      //And we extrude the shape to make it 3D\n      let createdShape2 = center.sketchOnPlane(newPlane2).extrude(height);\n\n      let fullGear = fusedShape.clone().fuse(createdShape2);\n\n      fullGear = fullGear.cut(fusedShape.rotate(angle, [0, 0, 0], [0, 0, 1]))\n      \n      //For our new geometry we need to define the tags, color, plane, etc\n      let shape2 = {\n          geometry: [fullGear], \n          tags: [\"aTag\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      \n      return shape2\n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+                                                },
+                                                {
+                                                    "atomType": "Readme",
+                                                    "name": "README",
+                                                    "x": 0.18788958147818344,
+                                                    "y": 0.2395543175487465,
+                                                    "uniqueID": 1738611322634,
+                                                    "ioValues": [],
+                                                    "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
+                                                    "readmeText": "A basic round tooth gear",
+                                                    "global": true
+                                                },
+                                                {
+                                                    "atomType": "Input",
+                                                    "name": "Height",
+                                                    "x": 0.04,
+                                                    "y": 0.5236768802228412,
+                                                    "uniqueID": 1738611322376,
+                                                    "ioValues": [],
+                                                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                                                    "type": "number"
+                                                },
+                                                {
+                                                    "atomType": "Input",
+                                                    "name": "Teeth",
+                                                    "x": 0.04,
+                                                    "y": 0.6629526462395543,
+                                                    "uniqueID": 1738611322315,
+                                                    "ioValues": [],
+                                                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                                                    "type": "number"
+                                                },
+                                                {
+                                                    "atomType": "Input",
+                                                    "name": "Step",
+                                                    "x": 0.04,
+                                                    "y": 0.8022284122562675,
+                                                    "uniqueID": 1738611322345,
+                                                    "ioValues": [],
+                                                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                                                    "type": "number"
+                                                }
+                                            ],
+                                            "allConnectors": [
+                                                {
+                                                    "ap1Name": "geometry",
+                                                    "ap2Name": "number or geometry",
+                                                    "ap2Primary": false,
+                                                    "ap1ID": 1738611323129,
+                                                    "ap2ID": 1738611322473
+                                                },
+                                                {
+                                                    "ap1Name": "number or geometry",
+                                                    "ap2Name": "height",
+                                                    "ap2Primary": false,
+                                                    "ap1ID": 1738611322376,
+                                                    "ap2ID": 1738611323129
+                                                },
+                                                {
+                                                    "ap1Name": "number or geometry",
+                                                    "ap2Name": "teeth",
+                                                    "ap2Primary": false,
+                                                    "ap1ID": 1738611322315,
+                                                    "ap2ID": 1738611323129
+                                                },
+                                                {
+                                                    "ap1Name": "number or geometry",
+                                                    "ap2Name": "step",
+                                                    "ap2Primary": false,
+                                                    "ap1ID": 1738611322345,
+                                                    "ap2ID": 1738611323129
+                                                }
+                                            ],
+                                            "parentRepo": {
+                                                "lastFoundGit": "2025-02-03T15:47:14.794Z",
+                                                "privateRepo": false,
+                                                "repoName": "Simple-Rounded-Gear",
+                                                "dateCreated": "2025-02-02T21:06:55Z",
+                                                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Simple-Rounded-Gear/master/README.md?sanitize=true",
+                                                "yyyy": 2025,
+                                                "topMoleculeID": 1738530415384,
+                                                "githubMoleculesUsed": [],
+                                                "html_url": "https://github.com/BarbourSmith/Simple-Rounded-Gear",
+                                                "topics": [],
+                                                "parentRepo": null,
+                                                "forks": 0,
+                                                "dateModified": "739285",
+                                                "ranking": 0,
+                                                "searchField": "simple-rounded-gear barboursmith a simple gear with rounded teath ",
+                                                "owner": "BarbourSmith",
+                                                "description": "A simple gear with rounded teath",
+                                                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Simple-Rounded-Gear/master/project.abundance?sanitize=true",
+                                                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Simple-Rounded-Gear/master/project.svg?sanitize=true"
+                                            },
+                                            "unitsKey": "MM",
+                                            "fileTypeVersion": 1,
+                                            "compiledBom": []
                                         }
                                     ],
                                     "allConnectors": [
