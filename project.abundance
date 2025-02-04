@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1731524860777,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1731525157088
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -33,14 +38,19 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731524866338,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1737774131669
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
                     "atomType": "Molecule",
                     "name": "Lower",
-                    "x": 0.2920747996438112,
-                    "y": 0.3593314763231198,
+                    "x": 0.291005291005291,
+                    "y": 0.35600907029478457,
                     "uniqueID": 1737773933408,
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -820,8 +830,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Gear",
-                            "x": 0.4166666666666667,
-                            "y": 0.8941504178272981,
+                            "x": 0.41534391534391535,
+                            "y": 0.9025069637883008,
                             "uniqueID": 1738620009885,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1874,8 +1884,8 @@
                                 {
                                     "atomType": "Fusion",
                                     "name": "Fusion",
-                                    "x": 0.7824074074074073,
-                                    "y": 0.467966573816156,
+                                    "x": 0.7843915343915343,
+                                    "y": 0.47075208913649025,
                                     "uniqueID": 1738627181429,
                                     "ioValues": [
                                         {
@@ -1951,11 +1961,11 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 0
+                                            "ioValue": 260
                                         },
                                         {
                                             "name": "yDist",
-                                            "ioValue": -250
+                                            "ioValue": 0
                                         },
                                         {
                                             "name": "zDist",
@@ -2261,7 +2271,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1737773944628,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1737774095046
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -9780,7 +9795,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731525187537,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1731526338360
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -14646,7 +14666,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731528684030,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1731528781449
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
