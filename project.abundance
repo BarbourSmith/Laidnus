@@ -14,14 +14,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1731524860777,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1731525157088
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Molecule",
             "name": "Base",
-            "x": 0.25727513227513227,
-            "y": 0.7520891364902507,
+            "x": 0.26001780943900266,
+            "y": 0.7493036211699164,
             "uniqueID": 1731524866642,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -33,7 +38,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731524866338,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1737774131669
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -2218,7 +2228,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1737773944628,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1737774095046
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -9737,7 +9752,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731525187537,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1731526338360
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -14603,7 +14623,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731528684030,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1731528781449
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
