@@ -1814,8 +1814,8 @@
                                 {
                                     "atomType": "Rotate",
                                     "name": "Rotate",
-                                    "x": 0.6865079365079365,
-                                    "y": 0.7381615598885795,
+                                    "x": 0.8558201058201057,
+                                    "y": 0.3008356545961003,
                                     "uniqueID": 1738625213428,
                                     "ioValues": [
                                         {
@@ -1838,28 +1838,10 @@
                                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                                 },
                                 {
-                                    "atomType": "Assembly",
-                                    "name": "Assembly",
-                                    "x": 0.7764550264550265,
-                                    "y": 0.43732590529247906,
-                                    "uniqueID": 1738625237382,
-                                    "ioValues": [
-                                        {
-                                            "name": "Shape 1",
-                                            "ioValue": 1738625213428
-                                        },
-                                        {
-                                            "name": "Shape 2",
-                                            "ioValue": 1738623864038
-                                        }
-                                    ],
-                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                                },
-                                {
                                     "atomType": "Fusion",
                                     "name": "Fusion",
-                                    "x": 0.8108465608465609,
-                                    "y": 0.7325905292479109,
+                                    "x": 0.9027777777777777,
+                                    "y": 0.6852367688022285,
                                     "uniqueID": 1738626011495,
                                     "ioValues": [
                                         {
@@ -1884,6 +1866,89 @@
                                     "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
                                     "readmeText": "Readme text here",
                                     "global": true
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.3511904761904762,
+                                    "y": 0.8551532033426184,
+                                    "uniqueID": 1738627125582,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 84
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Circle",
+                                    "name": "Circle",
+                                    "x": 0.36574074074074076,
+                                    "y": 0.6462395543175488,
+                                    "uniqueID": 1738627132635,
+                                    "ioValues": [
+                                        {
+                                            "name": "diameter",
+                                            "ioValue": 96
+                                        }
+                                    ],
+                                    "description": "Creates a new circle."
+                                },
+                                {
+                                    "atomType": "Difference",
+                                    "name": "Difference",
+                                    "x": 0.5145502645502645,
+                                    "y": 0.8495821727019498,
+                                    "uniqueID": 1738627153373,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry2",
+                                            "ioValue": 1738627125582
+                                        },
+                                        {
+                                            "name": "geometry1",
+                                            "ioValue": 1738627132635
+                                        }
+                                    ],
+                                    "description": "Subtracts shape two from shape one."
+                                },
+                                {
+                                    "atomType": "Extrude",
+                                    "name": "Extrude",
+                                    "x": 0.6044973544973545,
+                                    "y": 0.67966573816156,
+                                    "uniqueID": 1738627169627,
+                                    "ioValues": [
+                                        {
+                                            "name": "geometry",
+                                            "ioValue": 1738627153373
+                                        },
+                                        {
+                                            "name": "height",
+                                            "ioValue": -2
+                                        }
+                                    ],
+                                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                                },
+                                {
+                                    "atomType": "Fusion",
+                                    "name": "Fusion",
+                                    "x": 0.7281746031746031,
+                                    "y": 0.6880222841225626,
+                                    "uniqueID": 1738627181429,
+                                    "ioValues": [
+                                        {
+                                            "name": "Shape 1",
+                                            "ioValue": 1738623864038
+                                        },
+                                        {
+                                            "name": "Shape 2",
+                                            "ioValue": 1738627169627
+                                        }
+                                    ],
+                                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                                    "unionType": "Fusion"
                                 }
                             ],
                             "allConnectors": [
@@ -1941,13 +2006,6 @@
                                     "ap2Name": "Shape 2",
                                     "ap2Primary": false,
                                     "ap1ID": 1738623864038,
-                                    "ap2ID": 1738625237382
-                                },
-                                {
-                                    "ap1Name": "Geometry",
-                                    "ap2Name": "Shape 2",
-                                    "ap2Primary": false,
-                                    "ap1ID": 1738623864038,
                                     "ap2ID": 1738626011495
                                 },
                                 {
@@ -1958,11 +2016,11 @@
                                     "ap2ID": 1738620009817
                                 },
                                 {
-                                    "ap1Name": "geometry",
+                                    "ap1Name": "Geometry",
                                     "ap2Name": "Shape 1",
                                     "ap2Primary": false,
-                                    "ap1ID": 1738625213428,
-                                    "ap2ID": 1738625237382
+                                    "ap1ID": 1738623864038,
+                                    "ap2ID": 1738627181429
                                 },
                                 {
                                     "ap1Name": "geometry",
@@ -1970,6 +2028,34 @@
                                     "ap2Primary": false,
                                     "ap1ID": 1738625213428,
                                     "ap2ID": 1738626011495
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738627125582,
+                                    "ap2ID": 1738627153373
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry1",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738627132635,
+                                    "ap2ID": 1738627153373
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "geometry",
+                                    "ap2Primary": true,
+                                    "ap1ID": 1738627153373,
+                                    "ap2ID": 1738627169627
+                                },
+                                {
+                                    "ap1Name": "geometry",
+                                    "ap2Name": "Shape 2",
+                                    "ap2Primary": false,
+                                    "ap1ID": 1738627169627,
+                                    "ap2ID": 1738627181429
                                 }
                             ],
                             "fileTypeVersion": 1,
