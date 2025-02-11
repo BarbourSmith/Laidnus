@@ -49,8 +49,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Lower",
-                    "x": 0.289021164021164,
-                    "y": 0.8523676880222841,
+                    "x": 0.28505291005291006,
+                    "y": 0.8495821727019498,
                     "uniqueID": 1737773933408,
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -11232,7 +11232,7 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 15
+                                    "ioValue": 10
                                 },
                                 {
                                     "name": "zDist",
@@ -11280,7 +11280,7 @@
                             "ioValues": [
                                 {
                                     "name": "Length",
-                                    "ioValue": 15
+                                    "ioValue": 10
                                 }
                             ],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -11327,7 +11327,7 @@
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 15
+                                            "ioValue": 10
                                         }
                                     ],
                                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -11621,7 +11621,8 @@
                             "y": 0.871866295264624,
                             "uniqueID": 1734811480547,
                             "ioValues": [],
-                            "description": "Defines a mathematical constant."
+                            "description": "Defines a mathematical constant.",
+                            "value": 10
                         },
                         {
                             "atomType": "Molecule",
