@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1731524860777,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1731525157088
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -38,12 +33,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731524866338,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1737774131669
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -6057,8 +6047,8 @@
                                 {
                                     "atomType": "Rotate",
                                     "name": "Rotate",
-                                    "x": 0.47949735449735453,
-                                    "y": 0.42896935933147634,
+                                    "x": 0.4775132275132275,
+                                    "y": 0.42618384401114207,
                                     "uniqueID": 1738123844645,
                                     "ioValues": [
                                         {
@@ -7392,8 +7382,8 @@
                                 {
                                     "atomType": "Molecule",
                                     "name": "Gear",
-                                    "x": 0.3326719576719577,
-                                    "y": 0.41225626740947074,
+                                    "x": 0.33201058201058203,
+                                    "y": 0.43732590529247906,
                                     "uniqueID": 1738562764234,
                                     "ioValues": [],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -9729,12 +9719,7 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1738799725661,
-                            "ioValues": [
-                                {
-                                    "name": "number or geometry",
-                                    "ioValue": 1738799726061
-                                }
-                            ],
+                            "ioValues": [],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -14966,12 +14951,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1731528684030,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1731528781449
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
