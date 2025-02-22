@@ -5313,8 +5313,7 @@
                                 }
                             ],
                             "description": "Extracts geometry containing the specified tag.",
-                            "tag": "Wood",
-                            "tagIndex": 1
+                            "tagIndex": 0
                         },
                         {
                             "atomType": "Molecule",
@@ -15160,7 +15159,6 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "Wood",
             "tagIndex": 0
         },
         {
