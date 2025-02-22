@@ -1957,8 +1957,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Upper",
-                    "x": 0.3333333333333333,
-                    "y": 0.44011142061281333,
+                    "x": 0.333994708994709,
+                    "y": 0.4094707520891365,
                     "uniqueID": 1737773944838,
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2052,8 +2052,8 @@
                                 {
                                     "atomType": "Tag",
                                     "name": "Wood",
-                                    "x": 0.8075396825396826,
-                                    "y": 0.29526462395543174,
+                                    "x": 0.8128306878306878,
+                                    "y": 0.3147632311977716,
                                     "uniqueID": 1737774994006,
                                     "ioValues": [
                                         {
@@ -5303,8 +5303,8 @@
                         {
                             "atomType": "ExtractTag",
                             "name": "Extract Tag",
-                            "x": 0.7314814814814815,
-                            "y": 0.8551532033426184,
+                            "x": 0.7354497354497355,
+                            "y": 0.883008356545961,
                             "uniqueID": 1737775010323,
                             "ioValues": [
                                 {
@@ -5313,6 +5313,7 @@
                                 }
                             ],
                             "description": "Extracts geometry containing the specified tag.",
+                            "tag": "Wood",
                             "tagIndex": 0
                         },
                         {
@@ -10060,8 +10061,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.5522486772486772,
-            "y": 0.4233983286908078,
+            "x": 0.5555555555555556,
+            "y": 0.403899721448468,
             "uniqueID": 1731525157088,
             "ioValues": [
                 {
@@ -15149,8 +15150,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.6428571428571428,
-            "y": 0.2395543175487465,
+            "x": 0.6488095238095237,
+            "y": 0.22284122562674097,
             "uniqueID": 1738111822881,
             "ioValues": [
                 {
@@ -15159,13 +15160,14 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
+            "tag": "Wood",
             "tagIndex": 0
         },
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.8220899470899472,
-            "y": 0.33147632311977715,
+            "x": 0.8273809523809523,
+            "y": 0.3342618384401114,
             "uniqueID": 1738111964224,
             "ioValues": [
                 {
