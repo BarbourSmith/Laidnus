@@ -2,9 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|9G Servo|2|$13.98|https://amzn.to/3POakdO|
-|Slip Ring|1|$0.00|https://amzn.to/4azfF23|
-|name|1|$0.00|[Amazon](https://www.amazon.com/gp/product/B082PPH3Z2?tag=maslowcnc01-20)|
-|Total: |4|$13.98| |
+|Total: |0|$0.00| |
 
- 3xCOG MSRP: $41.94
+ 3xCOG MSRP: $0.00
