@@ -15056,7 +15056,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 1500
+                            "ioValue": 1060
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
