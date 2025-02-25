@@ -2382,8 +2382,8 @@
                                 {
                                     "atomType": "GitHubMolecule",
                                     "name": "9G-Servo",
-                                    "x": 0.19378306878306878,
-                                    "y": 0.2562674094707521,
+                                    "x": 0.6005291005291005,
+                                    "y": 0.1671309192200557,
                                     "uniqueID": 1737774352622,
                                     "ioValues": [],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3038,8 +3038,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.3723544973544973,
-                                    "y": 0.2395543175487465,
+                                    "x": 0.7063492063492064,
+                                    "y": 0.1977715877437326,
                                     "uniqueID": 1737774365305,
                                     "ioValues": [
                                         {
@@ -3901,8 +3901,8 @@
                                 {
                                     "atomType": "Molecule",
                                     "name": "Spool",
-                                    "x": 0.2566137566137566,
-                                    "y": 0.36211699164345407,
+                                    "x": 0.255952380952381,
+                                    "y": 0.2924791086350975,
                                     "uniqueID": 1738264601037,
                                     "ioValues": [],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -4604,8 +4604,8 @@
                                 {
                                     "atomType": "Molecule",
                                     "name": "Spool",
-                                    "x": 0.4722222222222222,
-                                    "y": 0.4818941504178273,
+                                    "x": 0.3412698412698413,
+                                    "y": 0.20334261838440112,
                                     "uniqueID": 1740441588565,
                                     "ioValues": [],
                                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
