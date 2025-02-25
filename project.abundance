@@ -1981,8 +1981,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Outline",
-                            "x": 0.22486772486772486,
-                            "y": 0.30919220055710306,
+                            "x": 0.23412698412698413,
+                            "y": 0.25348189415041783,
                             "uniqueID": 1737773966461,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2358,8 +2358,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Actuator Servo",
-                            "x": 0.10714285714285714,
-                            "y": 0.7799442896935932,
+                            "x": 0.08134920634920635,
+                            "y": 0.8133704735376045,
                             "uniqueID": 1737774175724,
                             "ioValues": [],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -5463,8 +5463,8 @@
                                         {
                                             "atomType": "Difference",
                                             "name": "Difference",
-                                            "x": 0.4953703703703704,
-                                            "y": 0.5292479108635098,
+                                            "x": 0.49603174603174605,
+                                            "y": 0.5459610027855153,
                                             "uniqueID": 1740441945234,
                                             "ioValues": [
                                                 {
