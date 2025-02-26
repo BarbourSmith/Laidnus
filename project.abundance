@@ -11319,8 +11319,8 @@
         {
             "atomType": "Molecule",
             "name": "Top",
-            "x": 0.1455026455026455,
-            "y": 0.47075208913649025,
+            "x": 0.14351851851851852,
+            "y": 0.5292479108635098,
             "uniqueID": 1731525187960,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -16186,8 +16186,8 @@
         {
             "atomType": "Molecule",
             "name": "Pedistal",
-            "x": 0.5740740740740741,
-            "y": 0.7075208913649026,
+            "x": 0.5767195767195767,
+            "y": 0.7214484679665739,
             "uniqueID": 1731528683849,
             "ioValues": [
                 {
